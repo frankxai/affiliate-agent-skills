@@ -1,0 +1,29 @@
+priority,tool,category,has_program,commission,recurring,cookie_days,network,status,signup_url,our_link,note
+1,Higgsfield,video,yes,15% (Ambassador),12-month,30,Impact.com,active,https://higgsfield.ai/ambassador-program,,You use it — most authentic + highest ticket ($249/mo). JOIN FIRST. Separate Earn program = social posting.
+2,Systeme.io,creator-stack,yes,60%,lifetime,,direct,active,https://systeme.io/affiliate-program,,Highest recurring % lifetime no gate. Compounding spine.
+3,CapCut,creator-stack,yes,up to 35%,recurring,,Impact,active,https://www.capcut.com/partners/affiliate-program,,Massive install base easy convert.
+4,ElevenLabs,creator-stack,yes,22% (11% Business),12-month,90,direct/PartnerStack,active,https://elevenlabs.io/affiliates,,Long 90-day cookie + recurring + viral.
+5,Copy.ai,writing,yes,45% first year,year-1,60,PartnerStack,active,https://www.copy.ai/partners,,Highest writing rate no traffic min.
+6,Writesonic,writing,yes,30% (40% top),lifetime,30,PartnerStack/Tolt,active,https://writesonic.com/partners,,Lifetime recurring.
+7,Adobe Firefly,image,yes,~30%,recurring,60,Partnerize/Impact,active,https://www.adobe.com/affiliates.html,,Image-post monetization target (Midjourney/Ideogram/FLUX have none).
+8,Jasper,writing,yes,up to 30%,year-1,,PartnerStack,active,https://www.jasper.ai/partners,,Established high-ticket SaaS.
+9,Topaz Labs,video,yes,20%,one-time,30,direct,active,https://topazlabs.com/affiliates/,,High one-time AOV. Strong AI-upscaling SEO intent.
+10,Pika,video,yes,30%,recurring,,direct,verify,https://pika.art,,Fills Runway/Luma gap. VERIFY pika.art vs pika.style.
+11,Freepik,image,yes,30% recurring/20% one-time,recurring,,multiple,active,https://www.freepik.com/affiliates,,Rate depends on network.
+12,Canva,image,yes,up to $36/signup,one-time,,Impact,active,https://www.canva.com/affiliates/,,High convert low capped ticket.
+13,Descript,creator-stack,yes,15% (or $25/sale),12-month,,PartnerStack,active,https://www.descript.com/affiliate,,Initial term only no renewals.
+14,Perplexity,llm,yes,~$15/US referral,one-time,,Dub Partners,active,https://partners.dub.co/perplexity,,The ONE frontier-adjacent LLM program. US converts best.
+15,Rytr,writing,yes,30%,lifetime,,direct,active,https://rytr.me/affiliates,,Low ticket truly recurring.
+16,Pollo AI,video,yes,n/c,n/c,,direct,active,https://pollo.ai/affiliate-program,,Aggregator backdoor for Seedance/Veo/Sora/Kling.
+-,OpenAI,llm,no,,,,,dead-end,,,No program. Capture traffic route to payers.
+-,Anthropic,llm,no,,,,,dead-end,,,No program (Claude/Claude Code).
+-,Google,llm,no,,,,,dead-end,,,No program (Gemini/Veo/Nano Banana).
+-,Runway,video,no,,,,,dead-end,,,No program. Route to Higgsfield/Pika/Topaz.
+-,Luma,video,no,,,,,dead-end,,,No program.
+-,Kling,video,no,,,,,dead-end,,,No direct program — use Pollo.
+-,Midjourney,image,no,,,,,dead-end,,,Never had a program.
+-,Ideogram,image,no,,,,,dead-end,,,No program. Route to Firefly/Canva/Freepik.
+-,Recraft,image,no,,,,,dead-end,,,No program.
+-,Black Forest Labs,image,no,,,,,dead-end,,,Model lab — no referral layer.
+-,Leonardo.ai,image,no,,,,Impact,closed,,,CLOSED Apr 7 2026 — no new applicants.
+-,Notion,creator-stack,no,50%/180d (when open),lifetime,180,direct,closed,,,Not accepting new affiliates (Mar 2026). Monitor.
