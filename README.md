@@ -1,13 +1,16 @@
 # affiliate-agent-skills
 
-The shared engine for Frank's passive-income network. Three repos work together:
+The shared engine for the **agentic-income network** — a hub-and-spoke of honest AI-tool comparison sites. Open source on purpose: giving the method away is the distribution. See [`BUSINESS.md`](./BUSINESS.md) for the full plan.
 
 ```
-affiliate-agent-skills   ← THIS REPO. The engine: program catalog + audit + skills.
-        │  (consumed by both sites)
-        ├─► agenticpassiveincome      ← Site 1. AI-tool comparison content + affiliate links.
-        └─► disruptivepassiveincome   ← Site 2. Sibling site, different angle, same engine.
+affiliate-agent-skills   ← THIS REPO. The engine: catalog + audit + operating brain.
+        │  (consumed by every site)
+        ├─► agenticincome.ai            ← HUB (flagship). The authority brand.
+        ├─► agenticpassiveincome.ai     ← spoke: "set it and forget it" angle.
+        └─► disruptivepassiveincome.com ← spoke: "tools replacing job functions" angle.
 ```
+
+Spokes cross-link up to the hub for topical authority + referral flow. One engine, three brands, three search audiences — adding a site is a `lib/site.ts` swap.
 
 The thesis: **AI-tool comparison content is the affiliate monetization engine.** Frontier names (OpenAI, Anthropic, Google, Runway, Midjourney) drive search traffic but pay nothing — so rank for them, then place affiliate links on the adjacent **recurring payers** the post recommends. Lead with Higgsfield (15% recurring), then Systeme.io (60% lifetime) / CapCut / ElevenLabs / Copy.ai.
 
@@ -19,8 +22,11 @@ The thesis: **AI-tool comparison content is the affiliate monetization engine.**
 | `data/programs.csv` | Spreadsheet mirror. |
 | `scripts/affiliate-audit.mjs` | Join catalog × a site's content × traffic → which programs to join + which posts to link. |
 | `skills/affiliate-audit/` | Agent skill wrapping the audit + the strategy rules. |
-| `content-backlog.md` | The 22-post long-tail/AEO pipeline (shared across both sites). |
-| `ARCHITECTURE.md` | Build plan for the two sites + the new-session build prompt. |
+| `content-backlog.md` | The 22-post long-tail/AEO pipeline (shared across all sites). |
+| `BUSINESS.md` | The full business plan — model, network, scaling, the four self-improving loops, roadmap. |
+| `skills/agentic-income/` | The operating brain: what to build next, where money comes from, how it compounds. |
+| `skills/affiliate-audit/` | The money loop: catalog × content × traffic → which programs to join + posts to link. |
+| `ARCHITECTURE.md` | Site shell architecture + the new-session scaffold prompt. |
 
 ## Use it from a site
 

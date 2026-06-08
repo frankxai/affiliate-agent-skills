@@ -69,7 +69,22 @@ Higgsfield first; recurring > one-time; honest pick always wins; one disclosure/
 
 ## Status
 
-- ✅ Engine repo seeded (catalog, audit, skills, backlog).
-- ⬜ Site 1 scaffold (fresh session — prompt above).
-- ⬜ Site 2 scaffold.
+- ✅ Engine repo seeded (catalog, audit, skills, backlog) + OSS (MIT) + `BUSINESS.md` + `agentic-income` brain.
+- ✅ **Hub built** — `agenticincome.ai` flagship: Next.js 16 + MDX, 3 cornerstone posts, ComparisonTable + AnswerBox + FAQPage JSON-LD, build-green. The reusable template (`lib/site.ts` = only brand file). Repo: `frankxai/agenticincome` (private).
+- ⬜ Deploy hub to Vercel + attach `agenticincome.ai` DNS.
+- ⬜ Fork spoke 1 (`agenticpassiveincome.ai`) from the hub template — swap `lib/site.ts`, different backlog.
+- ⬜ Fork spoke 2 (`disruptivepassiveincome.com`) from the hub template.
 - ⬜ Join Higgsfield + set `ourLink` → links go live network-wide.
+
+## Forking a spoke from the hub (the new path)
+
+The hub IS the template now — don't scaffold from scratch. In a fresh session:
+
+```
+Fork the agenticincome hub into <spoke>. Clone frankxai/agenticincome as the base,
+then: (1) rewrite lib/site.ts with the spoke's brand/domain/angle + role:'spoke'
+(network[] links UP to agenticincome.ai), (2) swap the 3 posts for the spoke's
+backlog angle from ../affiliate-agent-skills/content-backlog.md, (3) keep every
+component + lib/affiliate.ts + the engine binding identical. Build green, push to
+frankxai/<spoke>, deploy. Brand angle: <spoke angle>.
+```
