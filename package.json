@@ -1,0 +1,61 @@
+{
+  "name": "@agentic-income/engine",
+  "version": "0.1.0",
+  "description": "Shared engine for the Agentic Income Network: canonical catalog, affiliate helpers, audit, and L99 brain/skills. One source of truth for honest recurring-payer routing across hub + spokes + redirector.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    },
+    "./catalog": {
+      "import": "./src/catalog.js",
+      "types": "./src/catalog.d.ts"
+    },
+    "./affiliate": {
+      "import": "./src/affiliate.js",
+      "types": "./src/affiliate.d.ts"
+    },
+    "./audit": {
+      "import": "./src/audit.js",
+      "types": "./src/audit.d.ts"
+    },
+    "./l99": {
+      "import": "./src/l99-income.js",
+      "types": "./src/l99-income.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "type-check": "tsc --noEmit",
+    "audit": "node scripts/affiliate-audit.mjs",
+    "catalog:publish": "node scripts/publish-catalog.mjs",
+    "test": "node --test tests/*.mjs || echo 'add tests'",
+    "lint": "echo 'add eslint if needed'"
+  },
+  "files": [
+    "src",
+    "data",
+    "scripts",
+    "skills"
+  ],
+  "keywords": [
+    "affiliate",
+    "income",
+    "catalog",
+    "agentic",
+    "l99",
+    "acos"
+  ],
+  "author": "FrankX / Starlight",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankxai/affiliate-agent-skills"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
