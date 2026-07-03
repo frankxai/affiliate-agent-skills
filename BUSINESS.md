@@ -25,7 +25,7 @@ The frontier-tools insight is the unlock: **ChatGPT, Claude, Midjourney, Veo hav
 | Property | Role | Angle |
 |---|---|---|
 | **agenticincome.ai** | Hub (flagship) | The authority brand — "build a system that earns." |
-| **agenticpassiveincome.ai** | Spoke | "Set it once, let it run." |
+| **agenticpassiveincome.com** | Spoke | "Set it once, let it run." |
 | **disruptivepassiveincome.com** | Spoke | "The tools quietly replacing whole job functions." |
 | **affiliate-agent-skills** | Engine | The shared catalog + audit + operating brain. OSS. |
 
@@ -67,7 +67,7 @@ Affiliate funds the lights; the list and the product are where it compounds.
 
 **Phase 2 — Close the money loop.** Run `affiliate-audit` weekly. Join the top-flagged programs. Every payer mentioned in a ranking post gets a link.
 
-**Phase 3 — Fork the spokes.** Once the hub has ranking proof, fork `agenticpassiveincome.ai` and `disruptivepassiveincome.com` from the template. Same engine, different angle + backlog.
+**Phase 3 — Fork the spokes.** Once the hub has ranking proof, fork `agenticpassiveincome.com` and `disruptivepassiveincome.com` from the template. Same engine, different angle + backlog.
 
 **Phase 4 — Build the list, then the product.** Email capture on every post → first owned-audience asset → first direct product to the warmest readers.
 

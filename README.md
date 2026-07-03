@@ -6,7 +6,7 @@ The shared engine for the **agentic-income network** — a hub-and-spoke of hone
 affiliate-agent-skills   ← THIS REPO. The engine: catalog + audit + operating brain.
         │  (consumed by every site)
         ├─► agenticincome.ai            ← HUB (flagship). The authority brand.
-        ├─► agenticpassiveincome.ai     ← spoke: "set it and forget it" angle.
+        ├─► agenticpassiveincome.com    ← spoke: "set it and forget it" angle.
         └─► disruptivepassiveincome.com ← spoke: "tools replacing job functions" angle.
 ```
 

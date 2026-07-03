@@ -72,7 +72,7 @@ Higgsfield first; recurring > one-time; honest pick always wins; one disclosure/
 - ✅ Engine repo seeded (catalog, audit, skills, backlog) + OSS (MIT) + `BUSINESS.md` + `agentic-income` brain.
 - ✅ **Hub built** — `agenticincome.ai` flagship: Next.js 16 + MDX, 3 cornerstone posts, ComparisonTable + AnswerBox + FAQPage JSON-LD, build-green. The reusable template (`lib/site.ts` = only brand file). Repo: `frankxai/agenticincome` (private).
 - ⬜ Deploy hub to Vercel + attach `agenticincome.ai` DNS.
-- ⬜ Fork spoke 1 (`agenticpassiveincome.ai`) from the hub template — swap `lib/site.ts`, different backlog.
+- ⬜ Fork spoke 1 (`agenticpassiveincome.com`) from the hub template — swap `lib/site.ts`, different backlog.
 - ⬜ Fork spoke 2 (`disruptivepassiveincome.com`) from the hub template.
 - ⬜ Join Higgsfield + set `ourLink` → links go live network-wide.
 
