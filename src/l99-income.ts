@@ -1,7 +1,8 @@
 // L99 for the income network: dispatchable/tested/composed/brand-gated scoring.
 // Extends the ACOS L99 pattern (catalogL99, slotScore, pendingGates) to income "slots" (programs on high-traffic posts, redirector coverage, loop health).
 
-import { getPrograms, payingPrograms } from './affiliate';
+import { getPrograms } from './catalog';
+import { payingPrograms } from './affiliate';
 
 export type IncomeL99Score = {
   version: string;

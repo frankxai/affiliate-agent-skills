@@ -56,6 +56,7 @@
     "url": "https://github.com/frankxai/affiliate-agent-skills"
   },
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "typescript": "^5.9.3"
   }
 }
