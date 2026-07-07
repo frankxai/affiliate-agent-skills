@@ -1,4 +1,4 @@
-import { loadCatalog, Program, getPrograms } from './catalog';
+import { loadCatalog, Program, getPrograms } from './catalog.js';
 
 export const DISCLOSURE = 'Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested.';
 

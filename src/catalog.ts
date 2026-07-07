@@ -1,4 +1,7 @@
 // Canonical catalog loader + types. Source of truth lives in ../data/programs.json (vendored to consumers via sync-catalog).
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 
 export type Program = {
   tool: string;
@@ -27,12 +30,12 @@ let cachedCatalog: Catalog | null = null;
 
 export function loadCatalog(force = false): Catalog {
   if (cachedCatalog && !force) return cachedCatalog;
-  // In package consumers, this will be resolved relative to the published data/ or the vendored copy.
-  // For engine dev: assumes run from affiliate-agent-skills root.
-  const fs = require('fs');
-  const path = require('path');
-  const jsonPath = path.join(__dirname, '..', 'data', 'programs.json');
-  const raw = fs.readFileSync(jsonPath, 'utf8');
+  // Resolved relative to this module's own location, so it works identically whether
+  // running from the engine repo directly or from inside a consumer's node_modules —
+  // the package's data/ ships alongside dist/ per package.json's "files" field.
+  const here = dirname(fileURLToPath(import.meta.url));
+  const jsonPath = join(here, '..', 'data', 'programs.json');
+  const raw = readFileSync(jsonPath, 'utf8');
   cachedCatalog = JSON.parse(raw) as Catalog;
   return cachedCatalog;
 }

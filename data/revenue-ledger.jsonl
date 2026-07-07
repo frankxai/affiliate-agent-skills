@@ -1,0 +1,16 @@
+# Agentic Income revenue ledger — append-only, one JSON object per line.
+# The single record of whether the network is actually earning. reality.md aim:
+#   "The income network earning — first affiliate revenue recorded."
+# Schema:
+#   date      YYYY-MM-DD
+#   program   catalog tool key (lowercase, e.g. "systeme", "elevenlabs")
+#   site      which property earned it: agenticincome | agenticpassiveincome | disruptivepassiveincome
+#   network   affiliate network the payout came through (direct, Impact, PartnerStack, ...)
+#   event     click | signup | commission | payout   (commission & payout carry money)
+#   amount    number (commission/payout = USD earned; click = count, default 1)
+#   currency  ISO code, default USD
+#   recurring true if this is a recurring commission (counts toward MRR)
+#   note      free text
+# Money events (commission|payout) drive first-dollar + totals. Do not delete rows — correct with a new row.
+# Example (delete when the first real payout lands):
+# {"date":"2026-07-14","program":"systeme","site":"agenticincome","network":"direct","event":"commission","amount":19.80,"currency":"USD","recurring":true,"note":"first Systeme.io signup — 60% lifetime"}

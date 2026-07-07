@@ -3,44 +3,41 @@
   "version": "0.1.0",
   "description": "Shared engine for the Agentic Income Network: canonical catalog, affiliate helpers, audit, and L99 brain/skills. One source of truth for honest recurring-payer routing across hub + spokes + redirector.",
   "type": "module",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./src/index.js",
-      "types": "./src/index.d.ts"
-    },
-    "./catalog": {
-      "import": "./src/catalog.js",
-      "types": "./src/catalog.d.ts"
-    },
-    "./affiliate": {
-      "import": "./src/affiliate.js",
-      "types": "./src/affiliate.d.ts"
-    },
-    "./audit": {
-      "import": "./src/audit.js",
-      "types": "./src/audit.d.ts"
-    },
-    "./l99": {
-      "import": "./src/l99-income.js",
-      "types": "./src/l99-income.d.ts"
-    }
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --build",
+    "prepare": "npm run build",
     "type-check": "tsc --noEmit",
     "audit": "node scripts/affiliate-audit.mjs",
+    "revenue": "node scripts/revenue-report.mjs",
     "catalog:publish": "node scripts/publish-catalog.mjs",
-    "test": "node --test tests/*.mjs || echo 'add tests'",
+    "test": "node --test tests/*.mjs",
     "lint": "echo 'add eslint if needed'"
   },
   "files": [
-    "src",
+    "dist",
     "data",
     "scripts",
-    "skills"
+    "skills",
+    "catalog.js",
+    "catalog.d.ts",
+    "affiliate.js",
+    "affiliate.d.ts",
+    "audit.js",
+    "audit.d.ts",
+    "l99.js",
+    "l99.d.ts",
+    "react.js",
+    "react.d.ts",
+    "catalog-helpers.js",
+    "catalog-helpers.d.ts",
+    "analytics.js",
+    "analytics.d.ts"
   ],
+  "peerDependencies": {
+    "react": ">=18"
+  },
   "keywords": [
     "affiliate",
     "income",
@@ -57,6 +54,8 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
     "typescript": "^5.9.3"
   }
 }

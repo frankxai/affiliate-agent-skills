@@ -1,4 +1,9 @@
 
+# Build output — reproduced on install via the "prepare" script for git-dependency consumers.
+# Never commit this; a stale committed dist/ that doesn't match src/ is worse than none.
+dist/
+*.tsbuildinfo
+
 # Starlight/ACOS temporary files
 .agent/
 *.log
