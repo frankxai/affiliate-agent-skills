@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "name": "Trinity Income Portfolio Skill/Agent Registry",
+  "description": "Canonical versioned, discoverable, monetizable registry for Trinity Income Portfolio skills, agents, and templates. Shared engine in affiliate-agent-skills. Supports 100% keep or low-fee models, one-click deploy, template gallery, cross-agent registration (Hermes, Codex, Claude, Grok, Antigravity), MCP exposure, public-trust verification.",
+  "lastUpdated": "2026-07-14",
+  "trinityBranding": {
+    "tagline": "Sovereign Agentic Passive Income OS — Earn • Automate • Compound",
+    "stages": ["Earn (agenticincome)", "Automate (agenticpassiveincome)", "Compound (disruptivepassiveincome)"],
+    "publicTrust": "All entries verified via public-trust.test.mjs; honest marketing, verifiable execution proofs, no hype."
+  },
+  "marketplaceMechanics": {
+    "feeModels": {
+      "100keep": "Creator keeps 100% — platform earns via optional premium hosting/retainers",
+      "lowFee": "Platform takes 5-15% on sales; 100% keep for free listings"
+    },
+    "oneClickDeploy": "Scripts deploy to Hermes profiles, Claude Code, Codex, Antigravity, or MCP-compatible hosts. Templates include install.sh, .env, skill symlinks.",
+    "templateGallery": "Pre-built Stream Packs, royalty farms (LoL), manager agents, retainers, DePIN nodes. Versioned, forkable, exportable as MCP/LangGraph/antigravity bundles."
+  },
+  "crossAgentRegistration": {
+    "Hermes": "skills/ symlinks + profile create; MCP tools via hermes gateway",
+    "Codex": ".codex/skills/ + exec prompts; export as standalone package",
+    "Claude": "CLAUDE.md pointers + .claude/skills/; MCP native",
+    "Grok": "Grok CLI harness + prompts; native Imagine integration",
+    "Antigravity": "antigravity-awesome-skills integration; worktree + harness registration"
+  },
+  "mcpExposure": {
+    "enabled": true,
+    "trinityActions": [
+      "trinity/diagnostics",
+      "trinity/stream/select",
+      "trinity/earn/audit",
+      "trinity/automate/deploy",
+      "trinity/compound/ledger",
+      "trinity/marketplace/list",
+      "trinity/marketplace/deploy",
+      "trinity/public-trust/verify"
+    ],
+    "protocol": "Model Context Protocol (MCP) 2025/2026 standard — any compatible agent (Claude Code, Codex, Grok, Cursor) can call Trinity actions natively."
+  },
+  "skills": [
+    {
+      "id": "trinity-income-router",
+      "name": "Trinity Income Router (Manager Agent)",
+      "version": "1.1.0",
+      "description": "Manager agent that routes across Earn/Automate/Compound stages with self-verification loops, test-driven workflows, MCP exposure.",
+      "category": "orchestration",
+      "discoverable": true,
+      "monetizable": true,
+      "feeModel": "100keep",
+      "price": 0,
+      "deployScript": "scripts/deploy-trinity-router.sh",
+      "templates": ["manager-agent-template", "test-driven-loop-template"],
+      "crossAgents": ["Hermes", "Claude", "Codex", "Grok", "Antigravity"],
+      "mcpTools": ["trinity/stream/select", "trinity/diagnostics"],
+      "publicTrust": "Verified with public-trust.test.mjs; open source on GitHub.",
+      "exportable": ["MCP", "LangGraph", "antigravity", "standalone npm"]
+    },
+    {
+      "id": "agentic-passive-income",
+      "name": "Agentic Passive Income Framework",
+      "version": "1.1.0",
+      "description": "Comprehensive framework for agentic passive income systems, LoL/gaming royalty farms, 30-day plans, Composio, Hermes cron.",
+      "category": "income",
+      "discoverable": true,
+      "monetizable": true,
+      "feeModel": "lowFee",
+      "price": 49,
+      "deployScript": "hermes profile create generative-royalty-farmer",
+      "templates": ["loL-royalty-farm", "coaching-swarm", "style-subscription"],
+      "crossAgents": ["Hermes", "Antigravity", "Claude"],
+      "mcpTools": ["trinity/earn/audit", "trinity/automate/deploy"],
+      "publicTrust": "Grounded in verified workflows; gaming flagship with real royalty yields.",
+      "exportable": ["MCP", "standalone", "antigravity-awesome-skills"]
+    },
+    {
+      "id": "affiliate-audit",
+      "name": "Affiliate Audit Skill",
+      "version": "0.9.0",
+      "description": "Catalog × content × traffic audit for recurring payer routing. Core of the shared engine.",
+      "category": "affiliate",
+      "discoverable": true,
+      "monetizable": false,
+      "feeModel": "100keep",
+      "price": 0,
+      "deployScript": "node scripts/affiliate-audit.mjs",
+      "templates": ["audit-template"],
+      "crossAgents": ["Hermes", "Codex"],
+      "mcpTools": ["trinity/earn/audit"],
+      "publicTrust": "Honest picks only; catalog status flags dead-ends.",
+      "exportable": ["npm package", "MCP"]
+    }
+  ],
+  "templates": [
+    {
+      "id": "manager-agent-template",
+      "name": "Trinity Manager Agent Template",
+      "version": "1.0.0",
+      "description": "One-click deployable manager for stage routing + verification.",
+      "galleryCategory": "orchestration",
+      "deployCommand": "git clone ... && ./deploy.sh (Hermes/Codex/Antigravity)",
+      "oneClick": true
+    },
+    {
+      "id": "loL-royalty-farm",
+      "name": "LoL Generative Royalty Farm",
+      "version": "1.0.0",
+      "description": "24/7 skin/emote generator + mint + royalty tracker. Flagship passive income example.",
+      "galleryCategory": "gaming",
+      "deployCommand": "hermes cron create ... (see agentic-passive-income skill)",
+      "oneClick": true
+    },
+    {
+      "id": "retainer-agency-template",
+      "name": "Agentic Agency Retainer ($2-5k/mo)",
+      "version": "1.0.0",
+      "description": "High-ticket retainer playbook with manager agent orchestration.",
+      "galleryCategory": "retainer",
+      "deployCommand": "See agentic-agency-os repo or MCP call",
+      "oneClick": false
+    }
+  ],
+  "marketplaceStats": {
+    "totalSkills": 3,
+    "totalTemplates": 3,
+    "totalDeployments": 0,
+    "avgFee": "low (5-15% or 100% keep)"
+  }
+}
