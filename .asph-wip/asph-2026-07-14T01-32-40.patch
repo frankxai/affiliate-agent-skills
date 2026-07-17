@@ -1,0 +1,1425 @@
+diff --git a/.asph-wip/asph-2026-07-07T23-35-15.patch b/.asph-wip/asph-2026-07-07T23-35-15.patch
+new file mode 100644
+index 0000000..4164b35
+--- /dev/null
++++ b/.asph-wip/asph-2026-07-07T23-35-15.patch
+@@ -0,0 +1,1419 @@
++diff --git a/.agent-harness.json b/.agent-harness.json
++new file mode 100644
++index 0000000..5452bfc
++--- /dev/null
+++++ b/.agent-harness.json
++@@ -0,0 +1,45 @@
+++﻿{
+++    "name":  "affiliate-agent-skills",
+++    "classification":  "agent-substrate",
+++    "owner":  "FrankX AI",
+++    "updated":  "2026-06-19",
+++    "remote":  "https://github.com/frankxai/affiliate-agent-skills.git",
+++    "health":  {
+++                   "primaryCheck":  "npm run build",
+++                   "manualChecks":  [
+++                                        "Review AGENTS.md before edits",
+++                                        "Preserve user work and dirty files",
+++                                        "Scan public outputs for secrets and private memory"
+++                                    ]
+++               },
+++    "agentGuidance":  {
+++                          "readAgentsMd":  true,
+++                          "avoidPrivateMemory":  true,
+++                          "preserveExistingConventions":  true,
+++                          "designTasteKernel":  {
+++                                                    "enabled":  true,
+++                                                    "root":  "C:\\Users\\frank\\starlight\\repos",
+++                                                    "files":  [
+++                                                                  "C:\\Users\\frank\\starlight\\repos\\DESIGN_TASTE.md",
+++                                                                  "C:\\Users\\frank\\starlight\\repos\\WEB_EXPERIENCE_STANDARD.md",
+++                                                                  "C:\\Users\\frank\\starlight\\repos\\MOTION_TASTE_RUBRIC.md",
+++                                                                  "C:\\Users\\frank\\starlight\\repos\\MULTI_AGENT_DESIGN_COUNCIL.md",
+++                                                                  "C:\\Users\\frank\\starlight\\repos\\VISUAL_QA_GATE.md"
+++                                                              ],
+++                                                    "appliesTo":  [
+++                                                                      "site",
+++                                                                      "app",
+++                                                                      "landing-page",
+++                                                                      "dashboard",
+++                                                                      "visual-identity",
+++                                                                      "brand",
+++                                                                      "motion",
+++                                                                      "media",
+++                                                                      "social",
+++                                                                      "frontend"
+++                                                                  ],
+++                                                    "motionPlugin":  "motion-design-studio",
+++                                                    "visualVerificationRequired":  true
+++                                                }
+++                      }
+++}
++diff --git a/.github/dependabot.yml b/.github/dependabot.yml
++new file mode 100644
++index 0000000..65ad190
++--- /dev/null
+++++ b/.github/dependabot.yml
++@@ -0,0 +1,14 @@
+++version: 2
+++updates:
+++  - package-ecosystem: "npm"
+++    directory: "/"
+++    schedule:
+++      interval: "weekly"
+++    groups:
+++      minor-and-patch:
+++        update-types: ["minor", "patch"]
+++    open-pull-requests-limit: 5
+++  - package-ecosystem: "github-actions"
+++    directory: "/"
+++    schedule:
+++      interval: "weekly"
++diff --git a/.gitignore b/.gitignore
++index f149f9b..c5eae87 100644
++--- a/.gitignore
+++++ b/.gitignore
++@@ -1,4 +1,9 @@
++ 
+++# Build output — reproduced on install via the "prepare" script for git-dependency consumers.
+++# Never commit this; a stale committed dist/ that doesn't match src/ is worse than none.
+++dist/
+++*.tsbuildinfo
+++
++ # Starlight/ACOS temporary files
++ .agent/
++ *.log
++diff --git a/AGENTS.md b/AGENTS.md
++new file mode 100644
++index 0000000..0e81477
++--- /dev/null
+++++ b/AGENTS.md
++@@ -0,0 +1,42 @@
+++﻿# Repository Instructions
+++
+++This repo is part of the FrankX / Starlight / Arcanea agent estate.
+++
+++## Classification
+++
+++- Repo: $title
+++- Class: $Classification
+++- Default health command: $HealthCommand
+++- Remote: $Remote
+++
+++## Agent Rules
+++
+++- Read this file before making changes.
+++- Preserve existing user work and unrelated dirty files.
+++- Keep edits scoped to the requested task.
+++- Prefer existing repo conventions over new abstractions.
+++- Run the health command before handoff when feasible.
+++- Do not publish secrets, private memory, credentials, or internal-only strategy.
+++
+++## Class-Specific Guidance
+++
+++- Preserve skill/plugin/MCP schemas and frontmatter.
+++- Validate skills, manifests, scripts, and generated registries after edits.
+++- Keep public/private memory boundaries explicit.
+++
+++## Handoff
+++
+++Summarize changed files, validation run, risks, and any follow-up needed.
+++
+++## Design Taste Kernel
+++
+++For any site, app, landing page, dashboard, visual identity, brand, motion, media, social, or frontend task, apply the shared Design Taste Kernel before handoff:
+++
+++- C:\Users\frank\starlight\repos\DESIGN_TASTE.md
+++- C:\Users\frank\starlight\repos\WEB_EXPERIENCE_STANDARD.md
+++- C:\Users\frank\starlight\repos\MOTION_TASTE_RUBRIC.md
+++- C:\Users\frank\starlight\repos\MULTI_AGENT_DESIGN_COUNCIL.md
+++- C:\Users\frank\starlight\repos\VISUAL_QA_GATE.md
+++
+++When motion, scroll, generated media, GIF/video, or premium polish matters, route through the Motion Design Studio plugin/skills and verify the result visually.
+++
++diff --git a/AUDIT.md b/AUDIT.md
++index 1b68f80..ec74efc 100644
++--- a/AUDIT.md
+++++ b/AUDIT.md
++@@ -1,80 +1,17 @@
++ # Affiliate Monetization Audit
++ 
++-_Generated by affiliate-agent-skills `scripts/affiliate-audit.mjs` against `../FrankX/content`._
+++_Generated by affiliate-agent-skills `scripts/affiliate-audit.mjs` against `./app/blog`._
++ 
++ ## Join these programs first
++ 
++ | # | Program | Commission | Recurring | Traffic | # posts | Signup |
++ |---|---------|-----------|-----------|---------|---------|--------|
++-| 1 | Higgsfield | 15% (Ambassador) | 12-month | 0 | 7 | https://higgsfield.ai/ |
++-| 2 | Systeme.io | 60% | lifetime | 0 | 1 | https://systeme.io/affiliate-program |
++-| 3 | CapCut | up to 35% | recurring | 0 | 10 | https://www.capcut.com/partners/affiliate-program |
++-| 4 | ElevenLabs | 22% (11% Business) | 12-month | 0 | 16 | https://elevenlabs.io/affiliates |
++-| 5 | Copy.ai | 45% first year | year-1 | 0 | 3 | https://www.copy.ai/affiliate |
++-| 6 | Writesonic | 20% | 12-month | 0 | 2 | https://writesonic.com/affiliate |
++-| 7 | Adobe Firefly | ~30% | recurring | 0 | 9 | https://www.adobe.com/affiliates.html |
++-| 8 | Jasper | up to 30% | year-1 | 0 | 4 | https://www.jasper.ai/partners |
++-| 9 | Topaz Labs | 20% | one-time (×12 on monthly) | 0 | 1 | https://topazlabs.com/affiliates/ |
++-| 10 | Canva | up to $36/signup | one-time | 0 | 12 | https://www.canva.com/affiliates/ |
++-| 11 | Descript | 15% (or $25/sale) | 12-month | 0 | 14 | https://www.descript.com/affiliate |
++-| 12 | Perplexity | ~$15/US referral | one-time | 0 | 20 | https://partners.dub.co/perplexity |
++-| 13 | Rytr | 30% | lifetime | 0 | 1 | https://rytr.me/affiliates |
+++| — | (no monetizable mentions found) | | | | | |
++ 
++ ## Posts to add links to
++ 
++ | Post | Visitors | Monetizable mentions |
++ |------|----------|----------------------|
++-| `blog/08-golden-age-of-intelligence` | — | Descript, Perplexity |
++-| `blog/aeo-playbook-get-cited-by-ai-2026` | — | Perplexity |
++-| `blog/agentic-ai-roadmap-2025` | — | ElevenLabs, Adobe Firefly |
++-| `blog/agentic-ai-roadmap-2026` | — | ElevenLabs |
++-| `blog/agentic-creator-os` | — | Descript |
++-| `blog/agentic-seo-publishing-masterplan` | — | Adobe Firefly, Descript, Perplexity |
++-| `blog/ai-image-video-generation-playbook-2026` | — | Higgsfield |
++-| `blog/ai-video-generation-2026-sora-runway-kling-veo` | — | CapCut, Descript |
++-| `blog/best-ai-affiliate-programs-2026` | — | Higgsfield, Systeme.io, CapCut, ElevenLabs, Copy.ai, Writesonic, Adobe Firefly, Topaz Labs, Canva, Descript, Perplexity |
++-| `blog/best-ai-browser-2026` | — | Perplexity |
++-| `blog/best-ai-image-generators-2026` | — | Adobe Firefly |
++-| `blog/best-ai-logo-maker-2026` | — | Canva |
++-| `blog/best-ai-presentation-maker-2026` | — | Canva |
++-| `blog/best-ai-product-photography-2026` | — | Canva |
++-| `blog/best-ai-shorts-tiktok-tools-2026` | — | CapCut |
++-| `blog/best-ai-superpowers-stack-2026` | — | Higgsfield, ElevenLabs, Jasper, Descript, Perplexity |
++-| `blog/best-ai-tools-for-creators-2026` | — | ElevenLabs, Canva |
++-| `blog/best-ai-video-editor-2026` | — | CapCut, Adobe Firefly, Descript |
++-| `blog/best-ai-writing-tools-vs-claude-2026` | — | Copy.ai, Writesonic, Jasper, Perplexity, Rytr |
++-| `blog/best-elevenlabs-alternatives-2026` | — | ElevenLabs |
++-| `blog/building-research-intelligence-system` | — | Perplexity |
++-| `blog/chatgpt-vs-claude-vs-gemini-2026` | — | Perplexity |
++-| `blog/cheapest-frontier-model-access-2026` | — | Perplexity |
++-| `blog/faceless-youtube-ai-tools-2026` | — | CapCut, ElevenLabs, Descript |
++-| `blog/frankx-intelligence-atlas-volume-1` | — | ElevenLabs, Adobe Firefly, Descript |
++-| `blog/golden-age-of-intelligence` | — | Jasper, Descript, Perplexity |
++-| `blog/intelligence-revolution-2025` | — | Copy.ai, Jasper |
++-| `blog/nvidia-gtc-2026-ai-architect-breakdown` | — | Perplexity |
++-| `blog/personal-ai-coe-under-100-2026` | — | Higgsfield, CapCut, ElevenLabs, Canva, Perplexity |
++-| `blog/reality-architecture-generative-ai-neuroscience` | — | ElevenLabs |
++-| `blog/seo-aeo-optimization-acos` | — | Perplexity |
++-| `blog/the-creative-os` | — | CapCut, Canva, Descript |
++-| `blog/ultimate-canva-ai-workflow-2026` | — | Canva |
++-| `blog/ultimate-capcut-workflow-2026` | — | CapCut |
++-| `blog/ultimate-descript-workflow-2026` | — | CapCut, Adobe Firefly, Descript |
++-| `blog/ultimate-elevenlabs-workflow-2026` | — | ElevenLabs |
++-| `blog/ultimate-higgsfield-workflow-2026` | — | Higgsfield, ElevenLabs |
++-| `blog/ultimate-opus-clip-workflow-2026` | — | CapCut |
++-| `blog/ultimate-perplexity-workflow-2026` | — | Perplexity |
++-| `blog/voice-ai-agents-2026-elevenlabs-hume-audio` | — | ElevenLabs, Adobe Firefly, Descript |
++-| `blog/what-is-a-gencreator` | — | Canva |
++-| `blog/what-is-agentic-ai` | — | Perplexity |
++-| `golden-age-book/chapter-05-building-your-golden-age` | — | Descript |
++-| `guides/claude-anthropic-guide` | — | Perplexity |
++-| `guides/elevenlabs-voice-guide` | — | ElevenLabs |
++-| `guides/image-generation-mastery` | — | Canva |
++-| `guides/midjourney-guide` | — | Adobe Firefly, Canva |
++-| `guides/openai-chatgpt-guide` | — | ElevenLabs, Perplexity |
++-| `guides/perplexity-ai-guide` | — | Perplexity |
++-| `staging/visual/demo-batch/README` | — | Higgsfield |
++-| `strategy/content-strategy-2026-06` | — | Higgsfield, ElevenLabs, Perplexity |
++-| `strategy/content-system-2026-05` | — | Canva |
+++| — | | |
++ 
++ > Disclosure: _Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested._
++diff --git a/MIGRATION-NOTES.md b/MIGRATION-NOTES.md
++new file mode 100644
++index 0000000..10b11b0
++--- /dev/null
+++++ b/MIGRATION-NOTES.md
++@@ -0,0 +1,42 @@
+++# Shared package migration — what's done, what's left, what to change before it's real
+++
+++_2026-07-06, overnight session. Read this before touching `@agentic-income/engine` consumers again._
+++
+++## What changed
+++
+++Six content-authoring components (`AffiliateLink`, `AffiliateDisclosure`, `ComparisonTable`, `AnswerBox`, `FaqSection`, `TrackedLink`) plus the catalog-matching logic and analytics helpers moved from hand-copied per-site files into `src/react/` here. This is the fix for a confirmed real bug: `disruptivepassiveincome`'s `ComparisonTable.tsx` had already drifted from the other two sites (missing price-sort) before this package existed — proof that copy-paste-per-repo doesn't hold up.
+++
+++## Architecture (why it's shaped this way)
+++
+++- **Four separate entry points**, not one: `catalog-helpers.js` (pure logic, no React), `analytics.js` (pure functions, no React), `react.js` (the actual components, `'use client'`), and the root (Node-only: catalog/affiliate/audit/l99). This split exists because mixing `node:fs`-dependent code with client-component code in one file poisons the browser bundle — Turbopack will hard-fail trying to bundle `node:fs` for the client. Keep them separate.
+++- **No `package.json` `"exports"` field.** Verified 2026-07-06: Next.js's bundler (Turbopack, this Next version) cannot resolve ANY subpath of this package through the `exports` field when the package is consumed via a pnpm `link:` symlink — fails with a plain "module not found" regardless of extension, conditions, or fallback shape. The workaround is plain filesystem-based subpath resolution: real files sitting at the package root (`react.js`, `catalog-helpers.js`, `analytics.js`, `catalog.js`, `affiliate.js`, `audit.js`, `l99.js`) that just re-export from `./dist/...`. This is NOT elegant but it is the confirmed-working shape. **Re-test this once the package is installed as a real git dependency instead of a `link:`** — the exports-field bug may be specific to the symlink case and might not reproduce once it's a normal git-cloned dependency. If it doesn't reproduce, reintroducing a clean `exports` field is worth doing, but don't assume it's fixed without testing.
+++- **`CatalogProvider` (React Context), not a factory function.** The original design had `createCatalogComponents(catalog)` return fresh bound components. That fails a real React Server Components rule: you cannot call a plain exported function from a `'use client'` module directly from server code (like `mdx-components.tsx`), even though the function itself doesn't touch the browser. Context sidesteps this — the components are static, stable exports; only `<CatalogProvider>` is rendered (not called) once in each site's root `layout.tsx`.
+++- **Explicit `.js` extensions on every relative import**, and `moduleResolution: "NodeNext"`. Two real, pre-existing latent bugs were found and fixed while building this: `catalog.ts` used CommonJS `require()` inside an ESM (`"type": "module"`) package — would throw at runtime the first time anyone actually executed it; and every relative import across `src/` omitted the `.js` extension, which `"moduleResolution": "bundler"` silently allows but real Node ESM does not. Both were latent — nothing had exercised the compiled output as a real dependency until this session.
+++
+++## Before this works in production (do this before/when pushing)
+++
+++1. **Change the dependency string.** Every consuming site's `package.json` currently has:
+++   ```json
+++   "@agentic-income/engine": "link:../affiliate-agent-skills"
+++   ```
+++   This must become a real git dependency once this repo is pushed:
+++   ```json
+++   "@agentic-income/engine": "github:frankxai/affiliate-agent-skills"
+++   ```
+++   (or pin to a tag/commit for stability — recommended once this stabilizes). `link:` only works for local development; Vercel's build has no sibling repo to link to.
+++2. **Verify the `prepare` script fires on git-dependency install.** `package.json` has `"prepare": "npm run build"`, which npm/pnpm run automatically for git dependencies specifically so `dist/` doesn't need to be committed. This should Just Work, but hasn't been verified against a real git install yet — only against a local symlink and a manually-copied real directory. First real deploy is the real test.
+++3. **Re-test whether the `exports`-field workaround is still needed.** See the architecture note above — the symlink may have been the actual trigger for that bug, not subpath exports themselves.
+++
+++## Verification method used tonight
+++
+++Local `pnpm link:` testing hit a Next.js/Turbopack bug that could not resolve package subpaths through a symlink. To verify the actual package/component code was correct (not just "resolves somehow"), each fix was validated by manually deleting the symlink and copying the real built package into `node_modules/@agentic-income/engine`, simulating what a real git-dependency install produces (pnpm clones git deps into real, non-symlinked directories). The full production build (`npm run build`) succeeded end-to-end against that real copy — 33 pages, all routes, on the hub (`agenticincome`). This is strong evidence the design is correct; it is not the same as having verified an actual `pnpm install` against a pushed git URL, which is the one remaining unverified step.
+++
+++## Sites migrated so far
+++
+++- [x] `agenticincome` (hub) — fully migrated, build-verified (33 pages).
+++- [x] `agenticpassiveincome` — fully migrated, build-verified (14 pages). Analytics subsystem backfilled (never existed here — plain `<a>` tags, zero click tracking, before this).
+++- [x] `disruptivepassiveincome` — fully migrated, build-verified (14 pages). Same analytics backfill.
+++
+++All three: real production build succeeded against a manually-copied real directory (not the `link:` symlink — see the architecture note above). `package.json` in each still has `"link:../affiliate-agent-skills"` — change to `"github:frankxai/affiliate-agent-skills"` before/when pushing, per item 1 above.
+++
+++- [x] `agentic-income-template` — also fully migrated + build-verified (10 pages). This was the important one to not skip: it's the clone-and-deploy starter for "site #4," and until it matched this pattern, forking it would have reintroduced the exact per-repo component drift this whole session exists to fix.
++diff --git a/affiliate.d.ts b/affiliate.d.ts
++new file mode 100644
++index 0000000..df0af8b
++--- /dev/null
+++++ b/affiliate.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/affiliate.js';
++diff --git a/affiliate.js b/affiliate.js
++new file mode 100644
++index 0000000..df0af8b
++--- /dev/null
+++++ b/affiliate.js
++@@ -0,0 +1 @@
+++export * from './dist/affiliate.js';
++diff --git a/analytics.d.ts b/analytics.d.ts
++new file mode 100644
++index 0000000..9106c50
++--- /dev/null
+++++ b/analytics.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/react/analytics.js';
++diff --git a/analytics.js b/analytics.js
++new file mode 100644
++index 0000000..9106c50
++--- /dev/null
+++++ b/analytics.js
++@@ -0,0 +1 @@
+++export * from './dist/react/analytics.js';
++diff --git a/audit.d.ts b/audit.d.ts
++new file mode 100644
++index 0000000..f7fbaf7
++--- /dev/null
+++++ b/audit.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/audit.js';
++diff --git a/audit.js b/audit.js
++new file mode 100644
++index 0000000..f7fbaf7
++--- /dev/null
+++++ b/audit.js
++@@ -0,0 +1 @@
+++export * from './dist/audit.js';
++diff --git a/catalog-helpers.d.ts b/catalog-helpers.d.ts
++new file mode 100644
++index 0000000..07e2418
++--- /dev/null
+++++ b/catalog-helpers.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/react/catalog-helpers.js';
++diff --git a/catalog-helpers.js b/catalog-helpers.js
++new file mode 100644
++index 0000000..07e2418
++--- /dev/null
+++++ b/catalog-helpers.js
++@@ -0,0 +1 @@
+++export * from './dist/react/catalog-helpers.js';
++diff --git a/catalog.d.ts b/catalog.d.ts
++new file mode 100644
++index 0000000..eb77cba
++--- /dev/null
+++++ b/catalog.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/catalog.js';
++diff --git a/catalog.js b/catalog.js
++new file mode 100644
++index 0000000..eb77cba
++--- /dev/null
+++++ b/catalog.js
++@@ -0,0 +1 @@
+++export * from './dist/catalog.js';
++diff --git a/data/revenue-ledger.jsonl b/data/revenue-ledger.jsonl
++new file mode 100644
++index 0000000..7cfaa0f
++--- /dev/null
+++++ b/data/revenue-ledger.jsonl
++@@ -0,0 +1,16 @@
+++# Agentic Income revenue ledger — append-only, one JSON object per line.
+++# The single record of whether the network is actually earning. reality.md aim:
+++#   "The income network earning — first affiliate revenue recorded."
+++# Schema:
+++#   date      YYYY-MM-DD
+++#   program   catalog tool key (lowercase, e.g. "systeme", "elevenlabs")
+++#   site      which property earned it: agenticincome | agenticpassiveincome | disruptivepassiveincome
+++#   network   affiliate network the payout came through (direct, Impact, PartnerStack, ...)
+++#   event     click | signup | commission | payout   (commission & payout carry money)
+++#   amount    number (commission/payout = USD earned; click = count, default 1)
+++#   currency  ISO code, default USD
+++#   recurring true if this is a recurring commission (counts toward MRR)
+++#   note      free text
+++# Money events (commission|payout) drive first-dollar + totals. Do not delete rows — correct with a new row.
+++# Example (delete when the first real payout lands):
+++# {"date":"2026-07-14","program":"systeme","site":"agenticincome","network":"direct","event":"commission","amount":19.80,"currency":"USD","recurring":true,"note":"first Systeme.io signup — 60% lifetime"}
++diff --git a/l99.d.ts b/l99.d.ts
++new file mode 100644
++index 0000000..5aeebbd
++--- /dev/null
+++++ b/l99.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/l99-income.js';
++diff --git a/l99.js b/l99.js
++new file mode 100644
++index 0000000..5aeebbd
++--- /dev/null
+++++ b/l99.js
++@@ -0,0 +1 @@
+++export * from './dist/l99-income.js';
++diff --git a/package.json b/package.json
++index e4d2f4d..a289a36 100644
++--- a/package.json
+++++ b/package.json
++@@ -3,44 +3,41 @@
++   "version": "0.1.0",
++   "description": "Shared engine for the Agentic Income Network: canonical catalog, affiliate helpers, audit, and L99 brain/skills. One source of truth for honest recurring-payer routing across hub + spokes + redirector.",
++   "type": "module",
++-  "main": "./src/index.js",
++-  "types": "./src/index.d.ts",
++-  "exports": {
++-    ".": {
++-      "import": "./src/index.js",
++-      "types": "./src/index.d.ts"
++-    },
++-    "./catalog": {
++-      "import": "./src/catalog.js",
++-      "types": "./src/catalog.d.ts"
++-    },
++-    "./affiliate": {
++-      "import": "./src/affiliate.js",
++-      "types": "./src/affiliate.d.ts"
++-    },
++-    "./audit": {
++-      "import": "./src/audit.js",
++-      "types": "./src/audit.d.ts"
++-    },
++-    "./l99": {
++-      "import": "./src/l99-income.js",
++-      "types": "./src/l99-income.d.ts"
++-    }
++-  },
+++  "main": "./dist/index.js",
+++  "types": "./dist/index.d.ts",
++   "scripts": {
++     "build": "tsc --build",
+++    "prepare": "npm run build",
++     "type-check": "tsc --noEmit",
++     "audit": "node scripts/affiliate-audit.mjs",
+++    "revenue": "node scripts/revenue-report.mjs",
++     "catalog:publish": "node scripts/publish-catalog.mjs",
++-    "test": "node --test tests/*.mjs || echo 'add tests'",
+++    "test": "node --test tests/*.mjs",
++     "lint": "echo 'add eslint if needed'"
++   },
++   "files": [
++-    "src",
+++    "dist",
++     "data",
++     "scripts",
++-    "skills"
+++    "skills",
+++    "catalog.js",
+++    "catalog.d.ts",
+++    "affiliate.js",
+++    "affiliate.d.ts",
+++    "audit.js",
+++    "audit.d.ts",
+++    "l99.js",
+++    "l99.d.ts",
+++    "react.js",
+++    "react.d.ts",
+++    "catalog-helpers.js",
+++    "catalog-helpers.d.ts",
+++    "analytics.js",
+++    "analytics.d.ts"
++   ],
+++  "peerDependencies": {
+++    "react": ">=18"
+++  },
++   "keywords": [
++     "affiliate",
++     "income",
++@@ -57,6 +54,8 @@
++   },
++   "devDependencies": {
++     "@types/node": "^24.0.0",
+++    "@types/react": "^19.0.0",
+++    "react": "^19.0.0",
++     "typescript": "^5.9.3"
++   }
++ }
++diff --git a/pnpm-lock.yaml b/pnpm-lock.yaml
++new file mode 100644
++index 0000000..7933a1a
++--- /dev/null
+++++ b/pnpm-lock.yaml
++@@ -0,0 +1,63 @@
+++lockfileVersion: '9.0'
+++
+++settings:
+++  autoInstallPeers: true
+++  excludeLinksFromLockfile: false
+++
+++importers:
+++
+++  .:
+++    devDependencies:
+++      '@types/node':
+++        specifier: ^24.0.0
+++        version: 24.13.2
+++      '@types/react':
+++        specifier: ^19.0.0
+++        version: 19.2.17
+++      react:
+++        specifier: ^19.0.0
+++        version: 19.2.7
+++      typescript:
+++        specifier: ^5.9.3
+++        version: 5.9.3
+++
+++packages:
+++
+++  '@types/node@24.13.2':
+++    resolution: {integrity: sha512-fRa09kZTgu8o71KFcDjUFuc7F+dEbZYZmkI0mg5YBTRs0yMKjYHsq/c0urDKeDb+D5qVgXOdFcuu+DZPKOITwA==}
+++
+++  '@types/react@19.2.17':
+++    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
+++
+++  csstype@3.2.3:
+++    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
+++
+++  react@19.2.7:
+++    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
+++    engines: {node: '>=0.10.0'}
+++
+++  typescript@5.9.3:
+++    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+++    engines: {node: '>=14.17'}
+++    hasBin: true
+++
+++  undici-types@7.18.2:
+++    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
+++
+++snapshots:
+++
+++  '@types/node@24.13.2':
+++    dependencies:
+++      undici-types: 7.18.2
+++
+++  '@types/react@19.2.17':
+++    dependencies:
+++      csstype: 3.2.3
+++
+++  csstype@3.2.3: {}
+++
+++  react@19.2.7: {}
+++
+++  typescript@5.9.3: {}
+++
+++  undici-types@7.18.2: {}
++diff --git a/react.d.ts b/react.d.ts
++new file mode 100644
++index 0000000..a946fc8
++--- /dev/null
+++++ b/react.d.ts
++@@ -0,0 +1 @@
+++export * from './dist/react/index.js';
++diff --git a/react.js b/react.js
++new file mode 100644
++index 0000000..8ee973a
++--- /dev/null
+++++ b/react.js
++@@ -0,0 +1,9 @@
+++// Root-level subpath shim for `import ... from '@agentic-income/engine/react'`.
+++// Deliberately NOT using package.json "exports" for this subpath — Next.js's bundler
+++// (as of Next 16, verified 2026-07-06) fails to resolve conditional subpath exports for
+++// this package when it's consumed via a pnpm "link:" symlink, even with transpilePackages
+++// set. The plain legacy resolution algorithm (package root + matching filename, no exports
+++// field mediating it) does not hit that bug, so this file exists purely to keep the import
+++// path clean while avoiding the broken code path. Re-verify this shim is still needed if
+++// this package is ever installed as a real git/npm dependency instead of a local link.
+++export * from './dist/react/index.js';
++diff --git a/scripts/revenue-report.mjs b/scripts/revenue-report.mjs
++new file mode 100644
++index 0000000..d25b556
++--- /dev/null
+++++ b/scripts/revenue-report.mjs
++@@ -0,0 +1,111 @@
+++#!/usr/bin/env node
+++// Revenue report for the Agentic Income network.
+++// Answers the one question the catalog never could: are we earning yet?
+++// Reads the source-of-truth catalog + the append-only revenue ledger and prints
+++// monetization coverage, the next program to join, and first-dollar status.
+++//
+++// Ledger format: one JSON object per line in data/revenue-ledger.jsonl
+++//   { "date":"2026-07-04", "program":"systeme", "site":"agenticincome",
+++//     "network":"direct", "event":"commission", "amount":24.0, "currency":"USD",
+++//     "recurring":true, "note":"first payout" }
+++// event ∈ click | signup | commission | payout   (money events: commission, payout)
+++// Lines starting with # and blank lines are ignored.
+++
+++import { readFileSync } from 'node:fs';
+++import { fileURLToPath } from 'node:url';
+++import { dirname, join } from 'node:path';
+++
+++const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+++const catalog = JSON.parse(readFileSync(join(ROOT, 'data/programs.json'), 'utf8'));
+++const programs = catalog.programs ?? [];
+++
+++let ledger = [];
+++try {
+++  ledger = readFileSync(join(ROOT, 'data/revenue-ledger.jsonl'), 'utf8')
+++    .split('\n')
+++    .map((l) => l.trim())
+++    .filter((l) => l && !l.startsWith('#'))
+++    .map((l, i) => {
+++      try { return JSON.parse(l); }
+++      catch { throw new Error(`revenue-ledger.jsonl: bad JSON on line ${i + 1}: ${l}`); }
+++    });
+++} catch (e) {
+++  if (e.code !== 'ENOENT') throw e; // no ledger yet = zero revenue, that's fine
+++}
+++
+++const money = (n) => `$${n.toFixed(2)}`;
+++const isRecurring = (p) => p.recurring && !/one-time|null/i.test(String(p.recurring));
+++const joinable = (p) => p.hasProgram === true && !['dead-end', 'closed'].includes(p.status);
+++
+++// --- Coverage -------------------------------------------------------------
+++const withProgram = programs.filter(joinable);
+++const joined = withProgram.filter((p) => p.ourLink);
+++const recurringJoined = joined.filter(isRecurring);
+++const cov = withProgram.length ? Math.round((joined.length / withProgram.length) * 100) : 0;
+++
+++// --- Join-next gaps (priority-ranked, recurring first) --------------------
+++const gaps = withProgram
+++  .filter((p) => !p.ourLink || p.status === 'verify')
+++  .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
+++
+++// --- Revenue from ledger --------------------------------------------------
+++const moneyEvents = ledger.filter((e) => e.event === 'commission' || e.event === 'payout');
+++const total = moneyEvents.reduce((s, e) => s + (Number(e.amount) || 0), 0);
+++const firstDollar = moneyEvents
+++  .map((e) => e.date)
+++  .sort()[0];
+++
+++const now = new Date();
+++const days30 = new Date(now.getTime() - 30 * 864e5).toISOString().slice(0, 10);
+++const last30 = moneyEvents.filter((e) => e.date >= days30).reduce((s, e) => s + (Number(e.amount) || 0), 0);
+++const recurring30 = moneyEvents
+++  .filter((e) => e.date >= days30 && e.recurring)
+++  .reduce((s, e) => s + (Number(e.amount) || 0), 0);
+++
+++const byProgram = {};
+++for (const e of moneyEvents) byProgram[e.program] = (byProgram[e.program] || 0) + (Number(e.amount) || 0);
+++
+++const signups = ledger.filter((e) => e.event === 'signup').length;
+++const clicks = ledger.filter((e) => e.event === 'click').reduce((s, e) => s + (Number(e.amount) || 1), 0);
+++
+++// --- Print ----------------------------------------------------------------
+++const bar = '─'.repeat(60);
+++console.log(`\n${bar}\n  AGENTIC INCOME — REVENUE REPORT   ${now.toISOString().slice(0, 10)}\n${bar}\n`);
+++
+++console.log('FIRST DOLLAR');
+++if (total > 0) {
+++  console.log(`  ✅ ACHIEVED ${firstDollar}  ·  ${money(total)} booked to date\n`);
+++} else {
+++  console.log(`  ⛔ not yet — 0 money events in the ledger.`);
+++  console.log(`     The aim in reality.md is unmet until one commission lands here.\n`);
+++}
+++
+++console.log('MONETIZATION COVERAGE');
+++console.log(`  ${joined.length}/${withProgram.length} joinable programs wired  (${cov}%)`);
+++console.log(`  ${recurringJoined.length} of those pay recurring  ← the compounding base`);
+++console.log(`  ${programs.filter((p) => p.hasProgram === false).length} high-traffic dead-ends (route their posts to payers)\n`);
+++
+++if (moneyEvents.length) {
+++  console.log('REVENUE');
+++  console.log(`  total booked ........ ${money(total)}`);
+++  console.log(`  last 30 days ........ ${money(last30)}   (recurring: ${money(recurring30)})`);
+++  const top = Object.entries(byProgram).sort((a, b) => b[1] - a[1]).slice(0, 5);
+++  for (const [prog, amt] of top) console.log(`    · ${prog.padEnd(16)} ${money(amt)}`);
+++  console.log('');
+++}
+++
+++console.log('LEADING SIGNALS');
+++console.log(`  clicks logged ....... ${clicks}`);
+++console.log(`  signups logged ...... ${signups}\n`);
+++
+++console.log('JOIN / VERIFY NEXT  (priority order — recurring beats one-time)');
+++if (!gaps.length) console.log('  none — every joinable program is wired. Focus shifts to traffic.\n');
+++for (const p of gaps.slice(0, 8)) {
+++  const tag = p.status === 'verify' ? 'VERIFY' : 'JOIN  ';
+++  const rec = isRecurring(p) ? '♻ recurring' : 'one-time';
+++  console.log(`  [P${p.priority ?? '?'}] ${tag} ${p.tool.padEnd(14)} ${String(p.commission).padEnd(16)} ${rec}`);
+++}
+++console.log(`\n${bar}`);
+++console.log('  Log a payout:  append one line to data/revenue-ledger.jsonl');
+++console.log('  Weekly loop:   pnpm audit  (what to write) + pnpm revenue  (what earned)');
+++console.log(`${bar}\n`);
++diff --git a/src/affiliate.ts b/src/affiliate.ts
++index a9abd5d..d31589e 100644
++--- a/src/affiliate.ts
+++++ b/src/affiliate.ts
++@@ -1,4 +1,4 @@
++-import { loadCatalog, Program, getPrograms } from './catalog';
+++import { loadCatalog, Program, getPrograms } from './catalog.js';
++ 
++ export const DISCLOSURE = 'Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested.';
++ 
++diff --git a/src/catalog.ts b/src/catalog.ts
++index 41ab0f1..a068635 100644
++--- a/src/catalog.ts
+++++ b/src/catalog.ts
++@@ -1,4 +1,7 @@
++ // Canonical catalog loader + types. Source of truth lives in ../data/programs.json (vendored to consumers via sync-catalog).
+++import { readFileSync } from 'node:fs';
+++import { fileURLToPath } from 'node:url';
+++import { dirname, join } from 'node:path';
++ 
++ export type Program = {
++   tool: string;
++@@ -27,12 +30,12 @@ let cachedCatalog: Catalog | null = null;
++ 
++ export function loadCatalog(force = false): Catalog {
++   if (cachedCatalog && !force) return cachedCatalog;
++-  // In package consumers, this will be resolved relative to the published data/ or the vendored copy.
++-  // For engine dev: assumes run from affiliate-agent-skills root.
++-  const fs = require('fs');
++-  const path = require('path');
++-  const jsonPath = path.join(__dirname, '..', 'data', 'programs.json');
++-  const raw = fs.readFileSync(jsonPath, 'utf8');
+++  // Resolved relative to this module's own location, so it works identically whether
+++  // running from the engine repo directly or from inside a consumer's node_modules —
+++  // the package's data/ ships alongside dist/ per package.json's "files" field.
+++  const here = dirname(fileURLToPath(import.meta.url));
+++  const jsonPath = join(here, '..', 'data', 'programs.json');
+++  const raw = readFileSync(jsonPath, 'utf8');
++   cachedCatalog = JSON.parse(raw) as Catalog;
++   return cachedCatalog;
++ }
++diff --git a/src/index.ts b/src/index.ts
++index 54b7388..341f6ae 100644
++--- a/src/index.ts
+++++ b/src/index.ts
++@@ -2,10 +2,15 @@
++ // Dispatchable, tested, composed, brand-gated engine for the Agentic Income Network.
++ // L99 excellence: one catalog powers honest comparisons that rank + monetize recurring payers across hub/spokes/redirector.
++ 
++-export * from './catalog';
++-export * from './affiliate';
++-export * from './audit';
++-export * from './l99-income';
+++export * from './catalog.js';
+++export * from './affiliate.js';
+++export * from './audit.js';
+++export * from './l99-income.js';
+++export * from './rate-limit.js';
+++// Deliberately NOT re-exporting ./react/index.js here — that module is client-safe
+++// (React components, browser fetch calls) while this one uses node:fs for catalog
+++// loading. Mixing them in one entry poisons the client bundle with a node:fs import
+++// it can't run. Import react components from '@agentic-income/engine/react.js' instead.
++ 
++ export const VERSION = '0.1.0';
++ export const DISCLOSURE = 'Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested.';
++diff --git a/src/l99-income.ts b/src/l99-income.ts
++index 99581e4..853b60e 100644
++--- a/src/l99-income.ts
+++++ b/src/l99-income.ts
++@@ -1,8 +1,8 @@
++ // L99 for the income network: dispatchable/tested/composed/brand-gated scoring.
++ // Extends the ACOS L99 pattern (catalogL99, slotScore, pendingGates) to income "slots" (programs on high-traffic posts, redirector coverage, loop health).
++ 
++-import { getPrograms } from './catalog';
++-import { payingPrograms } from './affiliate';
+++import { getPrograms } from './catalog.js';
+++import { payingPrograms } from './affiliate.js';
++ 
++ export type IncomeL99Score = {
++   version: string;
++diff --git a/src/rate-limit.ts b/src/rate-limit.ts
++new file mode 100644
++index 0000000..e150a45
++--- /dev/null
+++++ b/src/rate-limit.ts
++@@ -0,0 +1,42 @@
+++// Best-effort, in-process rate limiting for the network's public API routes
+++// (checkout, subscribe, analytics). Deliberately NOT a durable cross-instance limiter —
+++// that needs Vercel KV or Upstash Redis, a real infra decision with its own cost, and
+++// nobody's provisioned that yet. This in-memory version resets on every cold start and
+++// doesn't share state across concurrent serverless instances, so a determined abuser
+++// spread across instances isn't actually stopped — but it does stop the common case (one
+++// instance getting hammered by one client) at zero cost and zero new dependencies. Treat
+++// this as the honest first step, not the final answer; upgrade to KV/Redis if abuse
+++// actually shows up in the logs.
+++const buckets = new Map<string, number[]>();
+++
+++// Bound memory: an unbounded Map on a long-lived instance is its own small liability.
+++const MAX_TRACKED_KEYS = 5000;
+++
+++export type RateLimitResult = { allowed: boolean; remaining: number };
+++
+++export function checkRateLimit(key: string, limit: number, windowMs: number): RateLimitResult {
+++  const now = Date.now();
+++  const timestamps = (buckets.get(key) ?? []).filter((t) => now - t < windowMs);
+++
+++  if (timestamps.length >= limit) {
+++    buckets.set(key, timestamps);
+++    return { allowed: false, remaining: 0 };
+++  }
+++
+++  timestamps.push(now);
+++  buckets.set(key, timestamps);
+++
+++  if (buckets.size > MAX_TRACKED_KEYS) {
+++    const oldestKey = buckets.keys().next().value;
+++    if (oldestKey !== undefined) buckets.delete(oldestKey);
+++  }
+++
+++  return { allowed: true, remaining: limit - timestamps.length };
+++}
+++
+++/** Best-effort client identifier from standard proxy headers (Vercel sets x-forwarded-for). */
+++export function clientKeyFromHeaders(headers: Headers, routeName: string): string {
+++  const forwarded = headers.get('x-forwarded-for');
+++  const ip = forwarded ? forwarded.split(',')[0].trim() : 'unknown';
+++  return `${routeName}:${ip}`;
+++}
++diff --git a/src/react/analytics.ts b/src/react/analytics.ts
++new file mode 100644
++index 0000000..b3731fd
++--- /dev/null
+++++ b/src/react/analytics.ts
++@@ -0,0 +1,110 @@
+++// Shared analytics event contract + server/client helpers for the network's sites.
+++// Each site still owns its own /api/analytics route handler and calls forwardAnalyticsEvent
+++// from there — this module just makes sure the shape, allow-list, and forwarding logic
+++// can't drift between sites the way the hand-copied component trees already had.
+++
+++export type AnalyticsEvent = {
+++  event: string;
+++  path?: string;
+++  href?: string;
+++  source?: string;
+++  offer?: string;
+++  tool?: string;
+++  state?: string;
+++  requestId?: string;
+++  ts?: string;
+++};
+++
+++export const ALLOWED_EVENTS = new Set([
+++  'affiliate_click',
+++  'checkout_click',
+++  'checkout_redirect',
+++  'checkout_fallback_request',
+++  'delivery_view',
+++  'offer_view',
+++  'subscribe_success',
+++  'subscribe_error',
+++  'comparison_criteria_opened',
+++  'disclosure_seen',
+++  'affiliate_route_clicked',
+++  'owned_offer_clicked',
+++  'unpaid_route_clicked',
+++  'null_link_rendered',
+++  'stale_route_seen',
+++  'last_verified_visible',
+++  'trust_standard_clicked',
+++]);
+++
+++function clean(value: unknown): string | undefined {
+++  if (typeof value !== 'string') return undefined;
+++  const trimmed = value.trim();
+++  return trimmed.slice(0, 240) || undefined;
+++}
+++
+++/** Validate + normalize an inbound analytics payload. Returns null for anything not on the allow-list. */
+++export function normalizeAnalyticsEvent(input: unknown): AnalyticsEvent | null {
+++  if (!input || typeof input !== 'object') return null;
+++  const source = input as Record<string, unknown>;
+++  const event = clean(source.event);
+++
+++  if (!event || !ALLOWED_EVENTS.has(event)) return null;
+++
+++  return {
+++    event,
+++    path: clean(source.path),
+++    href: clean(source.href),
+++    source: clean(source.source),
+++    offer: clean(source.offer),
+++    tool: clean(source.tool),
+++    state: clean(source.state),
+++    requestId: clean(source.requestId),
+++    ts: clean(source.ts) ?? new Date().toISOString(),
+++  };
+++}
+++
+++/** Server-side: forward a normalized event to the configured webhook, tagged with which site sent it. */
+++export async function forwardAnalyticsEvent(event: AnalyticsEvent, siteHost: string): Promise<boolean> {
+++  const webhook = process.env.ANALYTICS_WEBHOOK_URL;
+++  if (!webhook || !webhook.startsWith('http')) return false;
+++
+++  const controller = new AbortController();
+++  const timeout = setTimeout(() => controller.abort(), 1500);
+++
+++  try {
+++    const response = await fetch(webhook, {
+++      method: 'POST',
+++      headers: { 'content-type': 'application/json' },
+++      body: JSON.stringify({ ...event, site: siteHost }),
+++      signal: controller.signal,
+++    });
+++    return response.ok;
+++  } catch {
+++    return false;
+++  } finally {
+++    clearTimeout(timeout);
+++  }
+++}
+++
+++/** Client-side: fire-and-forget beacon to this site's own /api/analytics route (same-origin, always relative). */
+++export function trackClientEvent(event: AnalyticsEvent['event'], payload: Omit<AnalyticsEvent, 'event' | 'ts'> = {}) {
+++  if (typeof window === 'undefined') return;
+++
+++  const body = JSON.stringify({
+++    ...payload,
+++    event,
+++    path: payload.path ?? window.location.pathname,
+++    ts: new Date().toISOString(),
+++  });
+++
+++  if ('sendBeacon' in navigator) {
+++    const sent = navigator.sendBeacon('/api/analytics', new Blob([body], { type: 'application/json' }));
+++    if (sent) return;
+++  }
+++
+++  void fetch('/api/analytics', {
+++    method: 'POST',
+++    headers: { 'content-type': 'application/json' },
+++    body,
+++    keepalive: true,
+++  }).catch(() => undefined);
+++}
++diff --git a/src/react/catalog-helpers.ts b/src/react/catalog-helpers.ts
++new file mode 100644
++index 0000000..46e788f
++--- /dev/null
+++++ b/src/react/catalog-helpers.ts
++@@ -0,0 +1,38 @@
+++// Pure catalog-lookup logic — deliberately its own file with no 'use client' directive
+++// and no React import, so consumers that only need lookup logic (e.g. a site's
+++// lib/affiliate.ts, used across server components, static generation, and metadata
+++// functions) don't pull the client-component bundle in transitively.
+++import type { Program, Catalog } from '../catalog.js';
+++
+++export type { Program, Catalog };
+++
+++/**
+++ * Parameterized by the caller's own catalog — no fixed import path, no assumption about
+++ * where a consumer's data/programs.json lives. Each site's lib/affiliate.ts calls this once
+++ * with its own vendored catalog and re-exports the result, so every existing
+++ * `import { getLink } from '@/lib/affiliate'` call site keeps working unchanged; only the
+++ * implementation behind it is now shared.
+++ */
+++export function createAffiliateHelpers(catalog: Catalog) {
+++  const byAlias = new Map<string, Program>();
+++  for (const p of catalog.programs) {
+++    byAlias.set(p.tool.toLowerCase(), p);
+++    for (const a of p.aliases ?? []) byAlias.set(a.toLowerCase(), p);
+++  }
+++
+++  function findProgram(tool: string): Program | undefined {
+++    return byAlias.get(tool.trim().toLowerCase());
+++  }
+++
+++  function getLink(tool: string): string | null {
+++    return findProgram(tool)?.ourLink ?? null;
+++  }
+++
+++  function payingPrograms(): Program[] {
+++    return catalog.programs
+++      .filter((p) => p.hasProgram && p.status !== 'closed' && p.status !== 'dead-end')
+++      .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
+++  }
+++
+++  return { DISCLOSURE: catalog.disclosure, findProgram, getLink, payingPrograms };
+++}
++diff --git a/src/react/components.tsx b/src/react/components.tsx
++new file mode 100644
++index 0000000..6c59165
++--- /dev/null
+++++ b/src/react/components.tsx
++@@ -0,0 +1,209 @@
+++'use client';
+++
+++// The one canonical copy of the content-authoring components every site's mdx-components.tsx
+++// binds to. Previously hand-copied per repo; disruptivepassiveincome's copy had already
+++// drifted (missing price-sort in ComparisonTable) before this module existed. Fix once, here,
+++// so it can't happen again — every site imports the same source instead of a local fork.
+++//
+++// Catalog binding is via Context, not a factory function: a factory (`createXComponents(catalog)`
+++// returning fresh components) can't be called from server code when this module is 'use client' —
+++// React disallows invoking any export of a client module directly from a server module, even a
+++// plain function. Rendering a client Component (or passing one as a prop) is fine; calling one
+++// of its exports as a function is not. Context sidesteps this: the components below are static,
+++// stable references — CatalogProvider is rendered (not called) in each site's root layout.
+++import { createContext, useContext, useMemo, useState, type ReactNode, type AnchorHTMLAttributes } from 'react';
+++import { trackClientEvent, type AnalyticsEvent } from './analytics.js';
+++import { createAffiliateHelpers, type Catalog } from './catalog-helpers.js';
+++
+++const CatalogContext = createContext<ReturnType<typeof createAffiliateHelpers> | null>(null);
+++
+++/** Wrap a site's root layout once: `<CatalogProvider catalog={catalog}>{children}</CatalogProvider>` */
+++export function CatalogProvider({ catalog, children }: { catalog: Catalog; children: ReactNode }) {
+++  const helpers = useMemo(() => createAffiliateHelpers(catalog), [catalog]);
+++  return <CatalogContext.Provider value={helpers}>{children}</CatalogContext.Provider>;
+++}
+++
+++function useCatalogHelpers() {
+++  const helpers = useContext(CatalogContext);
+++  if (!helpers) throw new Error('AffiliateLink/AffiliateDisclosure/ComparisonTable must render inside <CatalogProvider>.');
+++  return helpers;
+++}
+++
+++// --- Components with zero catalog dependency — safe to use directly ---
+++
+++/** The AEO answer box — a direct, citable answer at the top of a post. Lead with the conclusion. */
+++export function AnswerBox({ children }: { children: ReactNode }) {
+++  return (
+++    <div className="my-6 rounded-xl border border-accent/30 bg-accent/[0.06] px-5 py-4">
+++      <div className="mb-1 text-xs font-semibold uppercase text-accent">The short answer</div>
+++      <div className="text-[1.05rem] leading-relaxed text-ink">{children}</div>
+++    </div>
+++  );
+++}
+++
+++export type Faq = { q: string; a: string };
+++
+++/** Renders FAQs and emits FAQPage JSON-LD in one place — wins "People also ask" + AI answers. */
+++export function FaqSection({ items }: { items: Faq[] }) {
+++  const jsonLd = {
+++    '@context': 'https://schema.org',
+++    '@type': 'FAQPage',
+++    mainEntity: items.map((f) => ({
+++      '@type': 'Question',
+++      name: f.q,
+++      acceptedAnswer: { '@type': 'Answer', text: f.a },
+++    })),
+++  };
+++
+++  return (
+++    <section className="my-8">
+++      <h2>Frequently asked questions</h2>
+++      <div className="mt-3 divide-y divide-border rounded-xl border border-border">
+++        {items.map((f) => (
+++          <details key={f.q} className="group px-4 py-3">
+++            <summary className="cursor-pointer list-none font-semibold text-ink marker:hidden">{f.q}</summary>
+++            <p className="mt-2 text-muted">{f.a}</p>
+++          </details>
+++        ))}
+++      </div>
+++      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
+++    </section>
+++  );
+++}
+++
+++type TrackedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+++  event: AnalyticsEvent['event'];
+++  payload?: Omit<AnalyticsEvent, 'event' | 'ts'>;
+++  children: ReactNode;
+++};
+++
+++/** Anchor that fires a same-origin analytics beacon on click before navigating. */
+++export function TrackedLink({ event, payload, onClick, children, ...props }: TrackedLinkProps) {
+++  return (
+++    <a
+++      {...props}
+++      onClick={(clickEvent) => {
+++        trackClientEvent(event, { ...payload, href: props.href });
+++        onClick?.(clickEvent);
+++      }}
+++    >
+++      {children}
+++    </a>
+++  );
+++}
+++
+++// --- Components reading the catalog via CatalogProvider ---
+++
+++export function AffiliateLink({ tool, children }: { tool: string; children?: ReactNode }) {
+++  const { getLink, findProgram } = useCatalogHelpers();
+++  const href = getLink(tool);
+++  const label = children ?? findProgram(tool)?.tool ?? tool;
+++
+++  if (!href) return <strong>{label}</strong>;
+++
+++  return (
+++    <TrackedLink
+++      href={href}
+++      target="_blank"
+++      rel="sponsored nofollow noopener"
+++      className="text-accent underline underline-offset-2"
+++      event="affiliate_click"
+++      payload={{ tool, source: 'content-affiliate-link' }}
+++    >
+++      {label}
+++    </TrackedLink>
+++  );
+++}
+++
+++/** One per page that carries affiliate links — FTC compliance + trust. */
+++export function AffiliateDisclosure() {
+++  const { DISCLOSURE } = useCatalogHelpers();
+++  return (
+++    <p className="my-6 rounded-lg border border-border bg-surface/60 px-4 py-3 text-sm text-muted">
+++      <span className="mr-2 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-accent">Disclosure</span>
+++      {DISCLOSURE}
+++    </p>
+++  );
+++}
+++
+++type SortKey = 'tool' | 'price';
+++
+++export type ComparisonRow = {
+++  tool: string;
+++  verdict: string;
+++  price: string;
+++  recurring?: string;
+++  pick?: boolean;
+++};
+++
+++function Th({ children, onClick, active, asc }: { children: ReactNode; onClick: () => void; active: boolean; asc: boolean }) {
+++  return (
+++    <th className="px-4 py-3 font-semibold">
+++      <button onClick={onClick} className="inline-flex items-center gap-1 hover:text-ink">
+++        {children}
+++        <span className="text-[10px] uppercase tracking-[0.14em] opacity-60">{active ? (asc ? 'A-Z' : 'Z-A') : 'Sort'}</span>
+++      </button>
+++    </th>
+++  );
+++}
+++
+++/** The money component: an honest, sortable tool table. "Try" only renders when ourLink is set. */
+++export function ComparisonTable({ rows, caption }: { rows: ComparisonRow[]; caption?: string }) {
+++  const { getLink } = useCatalogHelpers();
+++  const [sort, setSort] = useState<SortKey>('tool');
+++  const [asc, setAsc] = useState(true);
+++
+++  const sorted = [...rows].sort((a, b) => {
+++    const cmp = a[sort].localeCompare(b[sort]);
+++    return asc ? cmp : -cmp;
+++  });
+++
+++  const toggle = (key: SortKey) => {
+++    if (key === sort) setAsc(!asc);
+++    else { setSort(key); setAsc(true); }
+++  };
+++
+++  return (
+++    <div className="my-7 overflow-hidden rounded-xl border border-border glass">
+++      {caption && <div className="border-b border-border px-4 py-2.5 text-sm font-medium text-muted">{caption}</div>}
+++      <div className="overflow-x-auto">
+++        <table className="w-full border-collapse text-sm">
+++          <thead>
+++            <tr className="text-left text-muted">
+++              <Th onClick={() => toggle('tool')} active={sort === 'tool'} asc={asc}>Tool</Th>
+++              <th className="px-4 py-3 font-semibold">Verdict</th>
+++              <Th onClick={() => toggle('price')} active={sort === 'price'} asc={asc}>Price</Th>
+++              <th className="px-4 py-3 font-semibold">Recurring</th>
+++              <th className="px-4 py-3 font-semibold">Try</th>
+++            </tr>
+++          </thead>
+++          <tbody>
+++            {sorted.map((r) => {
+++              const href = getLink(r.tool);
+++              return (
+++                <tr key={r.tool} className={`border-t border-border ${r.pick ? 'bg-accent/[0.05]' : ''}`}>
+++                  <td className="px-4 py-3 font-semibold text-ink">
+++                    {r.tool}
+++                    {r.pick && <span className="ml-2 rounded bg-accent/20 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">Top pick</span>}
+++                  </td>
+++                  <td className="px-4 py-3 text-muted">{r.verdict}</td>
+++                  <td className="px-4 py-3 text-ink">{r.price}</td>
+++                  <td className="px-4 py-3 text-muted">{r.recurring ?? 'None'}</td>
+++                  <td className="px-4 py-3">
+++                    {href ? (
+++                      <a href={href} target="_blank" rel="sponsored nofollow noopener" className="rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-bg hover:opacity-90">
+++                        Try
+++                      </a>
+++                    ) : (
+++                      <span className="text-xs text-muted/60">No link</span>
+++                    )}
+++                  </td>
+++                </tr>
+++              );
+++            })}
+++          </tbody>
+++        </table>
+++      </div>
+++    </div>
+++  );
+++}
++diff --git a/src/react/index.tsx b/src/react/index.tsx
++new file mode 100644
++index 0000000..707c012
++--- /dev/null
+++++ b/src/react/index.tsx
++@@ -0,0 +1,3 @@
+++export * from './components.js';
+++export * from './analytics.js';
+++export * from './catalog-helpers.js';
++diff --git a/tests/analytics.test.mjs b/tests/analytics.test.mjs
++new file mode 100644
++index 0000000..d3d0851
++--- /dev/null
+++++ b/tests/analytics.test.mjs
++@@ -0,0 +1,60 @@
+++import { test } from 'node:test';
+++import assert from 'node:assert/strict';
+++import { normalizeAnalyticsEvent, ALLOWED_EVENTS } from '../dist/react/analytics.js';
+++
+++test('accepts a valid, allow-listed event', () => {
+++  const result = normalizeAnalyticsEvent({ event: 'affiliate_click', tool: 'HeyGen', source: 'content-affiliate-link' });
+++  assert.ok(result);
+++  assert.equal(result.event, 'affiliate_click');
+++  assert.equal(result.tool, 'HeyGen');
+++});
+++
+++test('rejects an event not on the allow-list — this is the actual security boundary', () => {
+++  const result = normalizeAnalyticsEvent({ event: 'anything_i_want', tool: 'x' });
+++  assert.equal(result, null);
+++});
+++
+++test('rejects non-object input', () => {
+++  assert.equal(normalizeAnalyticsEvent(null), null);
+++  assert.equal(normalizeAnalyticsEvent('affiliate_click'), null);
+++  assert.equal(normalizeAnalyticsEvent(42), null);
+++  assert.equal(normalizeAnalyticsEvent(undefined), null);
+++});
+++
+++test('rejects missing event field', () => {
+++  assert.equal(normalizeAnalyticsEvent({ tool: 'HeyGen' }), null);
+++});
+++
+++test('truncates overlong string fields instead of accepting unbounded input', () => {
+++  const longString = 'x'.repeat(1000);
+++  const result = normalizeAnalyticsEvent({ event: 'affiliate_click', tool: longString });
+++  assert.ok(result);
+++  assert.ok(result.tool.length <= 240, 'field should be capped at 240 chars');
+++});
+++
+++test('drops non-string values on optional fields rather than passing them through', () => {
+++  const result = normalizeAnalyticsEvent({ event: 'affiliate_click', tool: 12345, source: { nested: true } });
+++  assert.ok(result);
+++  assert.equal(result.tool, undefined);
+++  assert.equal(result.source, undefined);
+++});
+++
+++test('fills in a timestamp when none is provided', () => {
+++  const result = normalizeAnalyticsEvent({ event: 'affiliate_click' });
+++  assert.ok(result.ts);
+++  assert.ok(!Number.isNaN(new Date(result.ts).getTime()));
+++});
+++
+++test('every event name actually used across the network is on the allow-list', () => {
+++  // Guards against the allow-list and the actual call sites drifting apart silently.
+++  const usedElsewhere = [
+++    'affiliate_click', 'checkout_click', 'checkout_redirect', 'checkout_fallback_request',
+++    'delivery_view', 'offer_view', 'subscribe_success', 'subscribe_error',
+++    'comparison_criteria_opened', 'disclosure_seen', 'affiliate_route_clicked',
+++    'owned_offer_clicked', 'unpaid_route_clicked', 'null_link_rendered',
+++    'stale_route_seen', 'last_verified_visible', 'trust_standard_clicked',
+++  ];
+++  for (const event of usedElsewhere) {
+++    assert.ok(ALLOWED_EVENTS.has(event), `"${event}" is used in site code but missing from ALLOWED_EVENTS`);
+++  }
+++});
++diff --git a/tests/catalog-helpers.test.mjs b/tests/catalog-helpers.test.mjs
++new file mode 100644
++index 0000000..2265d08
++--- /dev/null
+++++ b/tests/catalog-helpers.test.mjs
++@@ -0,0 +1,75 @@
+++import { test } from 'node:test';
+++import assert from 'node:assert/strict';
+++import { createAffiliateHelpers } from '../dist/react/catalog-helpers.js';
+++
+++const catalog = {
+++  disclosure: 'test disclosure text',
+++  programs: [
+++    { tool: 'HeyGen', aliases: ['heygen', 'hey gen'], hasProgram: true, priority: 1, status: 'active', ourLink: 'https://go.example/heygen' },
+++    { tool: 'OpenAI', aliases: ['chatgpt', 'gpt'], hasProgram: false, status: 'dead-end', ourLink: null },
+++    { tool: 'Jasper', aliases: [], hasProgram: true, priority: 8, status: 'deprioritized', ourLink: null },
+++    { tool: 'Leonardo', aliases: [], hasProgram: true, priority: 5, status: 'closed', ourLink: null },
+++  ],
+++};
+++
+++test('getLink returns the real URL for a joined program', () => {
+++  const { getLink } = createAffiliateHelpers(catalog);
+++  assert.equal(getLink('HeyGen'), 'https://go.example/heygen');
+++});
+++
+++test('getLink returns null (never a fabricated link) for a program with no ourLink', () => {
+++  const { getLink } = createAffiliateHelpers(catalog);
+++  assert.equal(getLink('OpenAI'), null);
+++  assert.equal(getLink('Jasper'), null);
+++});
+++
+++test('getLink returns null for a tool not in the catalog at all', () => {
+++  const { getLink } = createAffiliateHelpers(catalog);
+++  assert.equal(getLink('SomeToolThatDoesNotExist'), null);
+++});
+++
+++test('findProgram matches by alias, case-insensitively', () => {
+++  const { findProgram } = createAffiliateHelpers(catalog);
+++  assert.equal(findProgram('heygen')?.tool, 'HeyGen');
+++  assert.equal(findProgram('Hey Gen')?.tool, 'HeyGen');
+++  assert.equal(findProgram('CHATGPT')?.tool, 'OpenAI');
+++});
+++
+++test('findProgram trims whitespace before matching', () => {
+++  const { findProgram } = createAffiliateHelpers(catalog);
+++  assert.equal(findProgram('  heygen  ')?.tool, 'HeyGen');
+++});
+++
+++test('payingPrograms excludes dead-end and closed programs', () => {
+++  const { payingPrograms } = createAffiliateHelpers(catalog);
+++  const names = payingPrograms().map((p) => p.tool);
+++  assert.ok(!names.includes('OpenAI'), 'dead-end program should be excluded');
+++  assert.ok(!names.includes('Leonardo'), 'closed program should be excluded');
+++});
+++
+++test('payingPrograms includes deprioritized programs (deprioritized != excluded)', () => {
+++  const { payingPrograms } = createAffiliateHelpers(catalog);
+++  const names = payingPrograms().map((p) => p.tool);
+++  assert.ok(names.includes('Jasper'), 'deprioritized still has hasProgram=true and should be listed, just ranked low');
+++});
+++
+++test('payingPrograms sorts by priority ascending', () => {
+++  const { payingPrograms } = createAffiliateHelpers(catalog);
+++  const priorities = payingPrograms().map((p) => p.priority ?? 99);
+++  const sorted = [...priorities].sort((a, b) => a - b);
+++  assert.deepEqual(priorities, sorted);
+++});
+++
+++test('DISCLOSURE is passed through from the catalog verbatim', () => {
+++  const { DISCLOSURE } = createAffiliateHelpers(catalog);
+++  assert.equal(DISCLOSURE, 'test disclosure text');
+++});
+++
+++test('two different catalogs produce independent, non-leaking helpers', () => {
+++  const catalogB = { disclosure: 'other', programs: [{ tool: 'Only-In-B', hasProgram: true, status: 'active', ourLink: 'https://b.example' }] };
+++  const helpersA = createAffiliateHelpers(catalog);
+++  const helpersB = createAffiliateHelpers(catalogB);
+++  assert.equal(helpersA.getLink('Only-In-B'), null);
+++  assert.equal(helpersB.getLink('HeyGen'), null);
+++  assert.equal(helpersB.getLink('Only-In-B'), 'https://b.example');
+++});
++diff --git a/tests/rate-limit.test.mjs b/tests/rate-limit.test.mjs
++new file mode 100644
++index 0000000..4a12e5c
++--- /dev/null
+++++ b/tests/rate-limit.test.mjs
++@@ -0,0 +1,63 @@
+++import { test } from 'node:test';
+++import assert from 'node:assert/strict';
+++import { checkRateLimit, clientKeyFromHeaders } from '../dist/rate-limit.js';
+++
+++test('allows requests under the limit', () => {
+++  const key = `test-under-${Math.random()}`;
+++  for (let i = 0; i < 5; i++) {
+++    const result = checkRateLimit(key, 5, 60_000);
+++    assert.equal(result.allowed, true, `request ${i} should be allowed`);
+++  }
+++});
+++
+++test('blocks the request that exceeds the limit', () => {
+++  const key = `test-over-${Math.random()}`;
+++  for (let i = 0; i < 5; i++) checkRateLimit(key, 5, 60_000);
+++  const sixth = checkRateLimit(key, 5, 60_000);
+++  assert.equal(sixth.allowed, false);
+++  assert.equal(sixth.remaining, 0);
+++});
+++
+++test('remaining count decreases correctly as requests are used', () => {
+++  const key = `test-remaining-${Math.random()}`;
+++  const first = checkRateLimit(key, 3, 60_000);
+++  const second = checkRateLimit(key, 3, 60_000);
+++  assert.equal(first.remaining, 2);
+++  assert.equal(second.remaining, 1);
+++});
+++
+++test('a request outside the time window is not counted against the limit', async () => {
+++  const key = `test-window-${Math.random()}`;
+++  const result = checkRateLimit(key, 1, 20);
+++  assert.equal(result.allowed, true);
+++  await new Promise((r) => setTimeout(r, 30));
+++  const afterWindow = checkRateLimit(key, 1, 20);
+++  assert.equal(afterWindow.allowed, true, 'window should have expired, allowing a fresh request');
+++});
+++
+++test('different keys have independent limits', () => {
+++  const keyA = `test-independent-a-${Math.random()}`;
+++  const keyB = `test-independent-b-${Math.random()}`;
+++  checkRateLimit(keyA, 1, 60_000);
+++  const blockedA = checkRateLimit(keyA, 1, 60_000);
+++  const allowedB = checkRateLimit(keyB, 1, 60_000);
+++  assert.equal(blockedA.allowed, false);
+++  assert.equal(allowedB.allowed, true);
+++});
+++
+++test('clientKeyFromHeaders extracts the first IP from x-forwarded-for', () => {
+++  const headers = new Headers({ 'x-forwarded-for': '203.0.113.5, 70.41.3.18, 150.172.238.178' });
+++  assert.equal(clientKeyFromHeaders(headers, 'checkout'), 'checkout:203.0.113.5');
+++});
+++
+++test('clientKeyFromHeaders falls back to "unknown" with no header', () => {
+++  const headers = new Headers();
+++  assert.equal(clientKeyFromHeaders(headers, 'subscribe'), 'subscribe:unknown');
+++});
+++
+++test('clientKeyFromHeaders namespaces by route so the same IP on different routes gets independent limits', () => {
+++  const headers = new Headers({ 'x-forwarded-for': '198.51.100.1' });
+++  const keyA = clientKeyFromHeaders(headers, 'checkout');
+++  const keyB = clientKeyFromHeaders(headers, 'subscribe');
+++  assert.notEqual(keyA, keyB);
+++});
++diff --git a/tsconfig.json b/tsconfig.json
++index 6e37b13..d5050cb 100644
++--- a/tsconfig.json
+++++ b/tsconfig.json
++@@ -1,16 +1,17 @@
++ {
++   "compilerOptions": {
++     "target": "ES2022",
++-    "module": "ESNext",
++-    "moduleResolution": "bundler",
+++    "module": "NodeNext",
+++    "moduleResolution": "NodeNext",
+++    "jsx": "react-jsx",
++     "declaration": true,
++     "outDir": "./dist",
++-    "rootDir": ".",
+++    "rootDir": "./src",
++     "strict": true,
++     "esModuleInterop": true,
++     "skipLibCheck": true,
++     "forceConsistentCasingInFileNames": true
++   },
++-  "include": ["src/**/*", "scripts/**/*"],
+++  "include": ["src/**/*"],
++   "exclude": ["node_modules", "dist"]
++ }
