@@ -482,6 +482,298 @@
       ]
     },
     {
+      "network": "direct: Higgsfield",
+      "sharedSetup": false,
+      "setupCost": 1,
+      "setupAlreadyDone": false,
+      "totalValue": 3,
+      "score": 3,
+      "setupStep": null,
+      "programs": [
+        {
+          "tool": "Higgsfield",
+          "network": "direct",
+          "signupUrl": "https://higgsfield.ai/affiliate",
+          "registryState": "not-applied",
+          "value": {
+            "points": 3,
+            "rateBasis": "25%",
+            "windowBasis": "12 months",
+            "assumptions": [
+              "\"up to\" rate taken at face value — the base tier may be lower"
+            ]
+          },
+          "fields": [
+            {
+              "field": "Website / primary promotional URL",
+              "value": "https://example-ai-reviews.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Additional websites",
+              "value": "https://example-creator-stack.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Niche / content category",
+              "value": "AI tool comparisons and workflow tutorials",
+              "tier": "T1"
+            },
+            {
+              "field": "Audience",
+              "value": "independent creators and small teams choosing AI tools",
+              "tier": "T1"
+            },
+            {
+              "field": "Promotional methods",
+              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
+              "tier": "T1"
+            },
+            {
+              "field": "Monthly traffic / audience size",
+              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
+              "tier": "T1"
+            },
+            {
+              "field": "Country",
+              "value": "NL",
+              "tier": "T1"
+            },
+            {
+              "field": "Why this program (pitch)",
+              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+              "tier": "T1"
+            },
+            {
+              "field": "Name, email, password, 2FA",
+              "value": "You enter these. The agent never types credentials.",
+              "tier": "T3"
+            },
+            {
+              "field": "Tax form, payout / bank details",
+              "value": "You enter these on the network profile.",
+              "tier": "T3"
+            },
+            {
+              "field": "Terms of service checkbox + Submit",
+              "value": "You read, accept, and submit.",
+              "tier": "T3"
+            }
+          ],
+          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+          "terms": {
+            "commission": "up to 25% (rate rises with qualifying revenue)",
+            "window": "12-month",
+            "cookieDays": null,
+            "detail": "Up to 25% of the plan price on subscription purchases, renewals and upgrades for 12 months from the referral date; rate tiers up with qualifying revenue; refunded purchases earn nothing; quarterly/annual first payout held up to 90 days; referee gets up to 50% off for 3 hours. No paid ads, brand bidding or coupon/cashback sites. Applications open to anyone with an audience; link issued on signup. Cookie window not stated officially",
+            "sourceUrl": "https://higgsfield.ai/affiliate",
+            "verifiedAt": "2026-09-28"
+          },
+          "warnings": [
+            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
+          ],
+          "humanStep": {
+            "tier": "T3",
+            "text": "Open https://higgsfield.ai/affiliate, review the prefilled fields, read and accept the terms, click Submit."
+          }
+        }
+      ]
+    },
+    {
+      "network": "Rewardful: Opus Clip",
+      "sharedSetup": false,
+      "setupCost": 1,
+      "setupAlreadyDone": false,
+      "totalValue": 3,
+      "score": 3,
+      "setupStep": null,
+      "programs": [
+        {
+          "tool": "Opus Clip",
+          "network": "Rewardful",
+          "signupUrl": "https://www.opus.pro/affiliate",
+          "registryState": "not-applied",
+          "value": {
+            "points": 3,
+            "rateBasis": "25%",
+            "windowBasis": "12 months",
+            "assumptions": [
+              "\"up to\" rate taken at face value — the base tier may be lower"
+            ]
+          },
+          "fields": [
+            {
+              "field": "Website / primary promotional URL",
+              "value": "https://example-ai-reviews.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Additional websites",
+              "value": "https://example-creator-stack.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Niche / content category",
+              "value": "AI tool comparisons and workflow tutorials",
+              "tier": "T1"
+            },
+            {
+              "field": "Audience",
+              "value": "independent creators and small teams choosing AI tools",
+              "tier": "T1"
+            },
+            {
+              "field": "Promotional methods",
+              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
+              "tier": "T1"
+            },
+            {
+              "field": "Monthly traffic / audience size",
+              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
+              "tier": "T1"
+            },
+            {
+              "field": "Country",
+              "value": "NL",
+              "tier": "T1"
+            },
+            {
+              "field": "Why this program (pitch)",
+              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+              "tier": "T1"
+            },
+            {
+              "field": "Name, email, password, 2FA",
+              "value": "You enter these. The agent never types credentials.",
+              "tier": "T3"
+            },
+            {
+              "field": "Tax form, payout / bank details",
+              "value": "You enter these on the network profile.",
+              "tier": "T3"
+            },
+            {
+              "field": "Terms of service checkbox + Submit",
+              "value": "You read, accept, and submit.",
+              "tier": "T3"
+            }
+          ],
+          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+          "terms": {
+            "commission": "25% for up to 12 months",
+            "window": "12-month",
+            "cookieDays": null,
+            "detail": "25% of the subscription sale price for up to 12 consecutive months from the initial sale (monthly renewals count; stops if the referral cancels); paid monthly on the 15th via PayPal once earnings reach $20; approval takes about a week; inactive links deactivated after 6 months; no paid advertising or coupon sites; tracked via Rewardful. Cookie window not stated officially. The affiliate page FAQ says \"as long as the person remains subscribed\", but the terms cap it at 12 months",
+            "sourceUrl": "https://www.opus.pro/affiliate-terms",
+            "verifiedAt": "2026-09-28"
+          },
+          "warnings": [
+            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
+          ],
+          "humanStep": {
+            "tier": "T3",
+            "text": "Open https://www.opus.pro/affiliate, review the prefilled fields, read and accept the terms, click Submit."
+          }
+        }
+      ]
+    },
+    {
+      "network": "Rewardful: Synthesia",
+      "sharedSetup": false,
+      "setupCost": 1,
+      "setupAlreadyDone": false,
+      "totalValue": 3,
+      "score": 3,
+      "setupStep": null,
+      "programs": [
+        {
+          "tool": "Synthesia",
+          "network": "Rewardful",
+          "signupUrl": "https://www.synthesia.io/partners/affiliates",
+          "registryState": "not-applied",
+          "value": {
+            "points": 3,
+            "rateBasis": "25%",
+            "windowBasis": "12 months",
+            "assumptions": []
+          },
+          "fields": [
+            {
+              "field": "Website / primary promotional URL",
+              "value": "https://example-ai-reviews.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Additional websites",
+              "value": "https://example-creator-stack.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Niche / content category",
+              "value": "AI tool comparisons and workflow tutorials",
+              "tier": "T1"
+            },
+            {
+              "field": "Audience",
+              "value": "independent creators and small teams choosing AI tools",
+              "tier": "T1"
+            },
+            {
+              "field": "Promotional methods",
+              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
+              "tier": "T1"
+            },
+            {
+              "field": "Monthly traffic / audience size",
+              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
+              "tier": "T1"
+            },
+            {
+              "field": "Country",
+              "value": "NL",
+              "tier": "T1"
+            },
+            {
+              "field": "Why this program (pitch)",
+              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+              "tier": "T1"
+            },
+            {
+              "field": "Name, email, password, 2FA",
+              "value": "You enter these. The agent never types credentials.",
+              "tier": "T3"
+            },
+            {
+              "field": "Tax form, payout / bank details",
+              "value": "You enter these on the network profile.",
+              "tier": "T3"
+            },
+            {
+              "field": "Terms of service checkbox + Submit",
+              "value": "You read, accept, and submit.",
+              "tier": "T3"
+            }
+          ],
+          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+          "terms": {
+            "commission": "25% of net payments for 12 months (Starter/Creator plans)",
+            "window": "12-month",
+            "cookieDays": 60,
+            "detail": "25% of the net amount of payments from a qualified customer on Starter and Creator plans; a customer stays qualified for 12 months from first purchase; must register within 60 days of the click; paid monthly once due commission exceeds $30; no self-referrals; tracked in Rewardful. Milestone perks: free Starter account after 10 sales, free personal avatar after 15",
+            "sourceUrl": "https://www.synthesia.io/terms/affiliate-terms",
+            "verifiedAt": "2026-09-28"
+          },
+          "warnings": [
+            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
+          ],
+          "humanStep": {
+            "tier": "T3",
+            "text": "Open https://www.synthesia.io/partners/affiliates, review the prefilled fields, read and accept the terms, click Submit."
+          }
+        }
+      ]
+    },
+    {
       "network": "direct: Freepik",
       "sharedSetup": false,
       "setupCost": 1,
@@ -581,111 +873,12 @@
       ]
     },
     {
-      "network": "direct: Synthesia",
-      "sharedSetup": false,
-      "setupCost": 1,
-      "setupAlreadyDone": false,
-      "totalValue": 1.5,
-      "score": 1.5,
-      "setupStep": null,
-      "programs": [
-        {
-          "tool": "Synthesia",
-          "network": "direct",
-          "signupUrl": "https://www.synthesia.io/affiliates",
-          "registryState": "not-applied",
-          "value": {
-            "points": 1.5,
-            "rateBasis": "25%",
-            "windowBasis": "first year (12 months)",
-            "assumptions": [
-              "terms unverified — value × 0.5"
-            ]
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "~25% first year",
-            "window": "year-1",
-            "cookieDays": 60,
-            "detail": null,
-            "sourceUrl": "https://www.synthesia.io/affiliates",
-            "verifiedAt": null
-          },
-          "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://www.synthesia.io/affiliates, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        }
-      ]
-    },
-    {
       "network": "Impact",
       "sharedSetup": true,
       "setupCost": 3,
       "setupAlreadyDone": false,
-      "totalValue": 2.7,
-      "score": 0.9,
+      "totalValue": 1.8,
+      "score": 0.6,
       "setupStep": "Once for all Impact programs (T3): create your Impact partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.",
       "programs": [
         {
@@ -775,194 +968,6 @@
           "humanStep": {
             "tier": "T3",
             "text": "Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        },
-        {
-          "tool": "Higgsfield",
-          "network": "Impact",
-          "signupUrl": "https://higgsfield.ai/",
-          "registryState": "not-applied",
-          "value": {
-            "points": 0.9,
-            "rateBasis": "15%",
-            "windowBasis": "12 months",
-            "assumptions": [
-              "terms unverified — value × 0.5"
-            ]
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "15% (Ambassador)",
-            "window": "12-month",
-            "cookieDays": 30,
-            "detail": null,
-            "sourceUrl": "https://higgsfield.ai/",
-            "verifiedAt": null
-          },
-          "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://higgsfield.ai/, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        }
-      ]
-    },
-    {
-      "network": "direct: Opus Clip",
-      "sharedSetup": false,
-      "setupCost": 1,
-      "setupAlreadyDone": false,
-      "totalValue": 0.6,
-      "score": 0.6,
-      "setupStep": null,
-      "programs": [
-        {
-          "tool": "Opus Clip",
-          "network": "direct",
-          "signupUrl": "https://www.opus.pro/affiliate",
-          "registryState": "not-applied",
-          "value": {
-            "points": 0.6,
-            "rateBasis": "rate not published",
-            "windowBasis": "recurring, duration unstated (counted as 12 months)",
-            "assumptions": [
-              "no published rate — assumed 10% so it ranks low until verified",
-              "terms unverified — value × 0.5"
-            ]
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "~",
-            "window": "recurring",
-            "cookieDays": null,
-            "detail": null,
-            "sourceUrl": "https://www.opus.pro/affiliate",
-            "verifiedAt": null
-          },
-          "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://www.opus.pro/affiliate, review the prefilled fields, read and accept the terms, click Submit."
           }
         }
       ]

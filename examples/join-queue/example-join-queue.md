@@ -20,11 +20,11 @@ The agent prepared everything below (T1). Every Submit is yours (T3): the agent 
 | 3 | PartnerStack | Descript | 1.25 | 6.25 | T3: open, review, accept terms, Submit |
 | 4 | PartnerStack | Gamma | 0.1 | 6.25 | T3: open, review, accept terms, Submit |
 | 5 | direct: Rytr | Rytr | 3.6 | 3.6 | T3: open, review, accept terms, Submit |
-| 6 | direct: Freepik | Freepik | 1.8 | 1.8 | T3: open, review, accept terms, Submit |
-| 7 | direct: Synthesia | Synthesia | 1.5 | 1.5 | T3: open, review, accept terms, Submit |
-| 8 | Impact | Adobe Firefly | 1.8 | 0.9 | T3: open, review, accept terms, Submit |
-| 9 | Impact | Higgsfield | 0.9 | 0.9 | T3: open, review, accept terms, Submit |
-| 10 | direct: Opus Clip | Opus Clip | 0.6 | 0.6 | T3: open, review, accept terms, Submit |
+| 6 | direct: Higgsfield | Higgsfield | 3 | 3 | T3: open, review, accept terms, Submit |
+| 7 | Rewardful: Opus Clip | Opus Clip | 3 | 3 | T3: open, review, accept terms, Submit |
+| 8 | Rewardful: Synthesia | Synthesia | 3 | 3 | T3: open, review, accept terms, Submit |
+| 9 | direct: Freepik | Freepik | 1.8 | 1.8 | T3: open, review, accept terms, Submit |
+| 10 | Impact | Adobe Firefly | 1.8 | 0.6 | T3: open, review, accept terms, Submit |
 | 11 | direct: Topaz Labs | Topaz Labs | 0.1 | 0.1 | T3: open, review, accept terms, Submit |
 | 12 | direct: Pollo AI | Pollo AI | 0.05 | 0.05 | T3: open, review, accept terms, Submit |
 
@@ -173,9 +173,96 @@ Account already exists on this network: only the application remains.
 
 **Your step (T3):** Open https://rytr.me/affiliates, review the prefilled fields, read and accept the terms, click Submit.
 
+## direct: Higgsfield — score 3 (value 3 ÷ setup 1)
+
+### 6. Higgsfield
+
+- **Signup (official):** https://higgsfield.ai/affiliate
+- **Registry state:** not-applied
+- **Value:** 3 customer-months (25%; 12 months) — "up to" rate taken at face value — the base tier may be lower
+- **Terms:** up to 25% (rate rises with qualifying revenue); window 12-month; cookie not stated. Up to 25% of the plan price on subscription purchases, renewals and upgrades for 12 months from the referral date; rate tiers up with qualifying revenue; refunded purchases earn nothing; quarterly/annual first payout held up to 90 days; referee gets up to 50% off for 3 hours. No paid ads, brand bidding or coupon/cashback sites. Applications open to anyone with an audience; link issued on signup. Cookie window not stated officially
+- **Source:** https://higgsfield.ai/affiliate (verified 2026-09-28)
+- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
+
+| Field | Prefill | Tier |
+|---|---|---|
+| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
+| Additional websites | https://example-creator-stack.com | T1 |
+| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
+| Audience | independent creators and small teams choosing AI tools | T1 |
+| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
+| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
+| Country | NL | T1 |
+| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
+| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
+| Tax form, payout / bank details | You enter these on the network profile. | T3 |
+| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
+
+**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
+
+**Your step (T3):** Open https://higgsfield.ai/affiliate, review the prefilled fields, read and accept the terms, click Submit.
+
+## Rewardful: Opus Clip — score 3 (value 3 ÷ setup 1)
+
+### 7. Opus Clip
+
+- **Signup (official):** https://www.opus.pro/affiliate
+- **Registry state:** not-applied
+- **Value:** 3 customer-months (25%; 12 months) — "up to" rate taken at face value — the base tier may be lower
+- **Terms:** 25% for up to 12 months; window 12-month; cookie not stated. 25% of the subscription sale price for up to 12 consecutive months from the initial sale (monthly renewals count; stops if the referral cancels); paid monthly on the 15th via PayPal once earnings reach $20; approval takes about a week; inactive links deactivated after 6 months; no paid advertising or coupon sites; tracked via Rewardful. Cookie window not stated officially. The affiliate page FAQ says "as long as the person remains subscribed", but the terms cap it at 12 months
+- **Source:** https://www.opus.pro/affiliate-terms (verified 2026-09-28)
+- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
+
+| Field | Prefill | Tier |
+|---|---|---|
+| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
+| Additional websites | https://example-creator-stack.com | T1 |
+| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
+| Audience | independent creators and small teams choosing AI tools | T1 |
+| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
+| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
+| Country | NL | T1 |
+| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
+| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
+| Tax form, payout / bank details | You enter these on the network profile. | T3 |
+| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
+
+**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
+
+**Your step (T3):** Open https://www.opus.pro/affiliate, review the prefilled fields, read and accept the terms, click Submit.
+
+## Rewardful: Synthesia — score 3 (value 3 ÷ setup 1)
+
+### 8. Synthesia
+
+- **Signup (official):** https://www.synthesia.io/partners/affiliates
+- **Registry state:** not-applied
+- **Value:** 3 customer-months (25%; 12 months)
+- **Terms:** 25% of net payments for 12 months (Starter/Creator plans); window 12-month; cookie 60 days. 25% of the net amount of payments from a qualified customer on Starter and Creator plans; a customer stays qualified for 12 months from first purchase; must register within 60 days of the click; paid monthly once due commission exceeds $30; no self-referrals; tracked in Rewardful. Milestone perks: free Starter account after 10 sales, free personal avatar after 15
+- **Source:** https://www.synthesia.io/terms/affiliate-terms (verified 2026-09-28)
+- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
+
+| Field | Prefill | Tier |
+|---|---|---|
+| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
+| Additional websites | https://example-creator-stack.com | T1 |
+| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
+| Audience | independent creators and small teams choosing AI tools | T1 |
+| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
+| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
+| Country | NL | T1 |
+| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
+| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
+| Tax form, payout / bank details | You enter these on the network profile. | T3 |
+| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
+
+**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
+
+**Your step (T3):** Open https://www.synthesia.io/partners/affiliates, review the prefilled fields, read and accept the terms, click Submit.
+
 ## direct: Freepik — score 1.8 (value 1.8 ÷ setup 1)
 
-### 6. Freepik
+### 9. Freepik
 
 - **Signup (official):** https://www.freepik.com/affiliates
 - **Registry state:** not-applied
@@ -203,41 +290,11 @@ Account already exists on this network: only the application remains.
 
 **Your step (T3):** Open https://www.freepik.com/affiliates, review the prefilled fields, read and accept the terms, click Submit.
 
-## direct: Synthesia — score 1.5 (value 1.5 ÷ setup 1)
-
-### 7. Synthesia
-
-- **Signup (official):** https://www.synthesia.io/affiliates
-- **Registry state:** not-applied
-- **Value:** 1.5 customer-months (25%; first year (12 months)) — terms unverified — value × 0.5
-- **Terms:** ~25% first year; window year-1; cookie 60 days
-- **Source:** https://www.synthesia.io/affiliates (UNVERIFIED — re-read before submitting)
-- ⚠ Terms not verified against the official page — re-read them before submitting.
-- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
-
-| Field | Prefill | Tier |
-|---|---|---|
-| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
-| Additional websites | https://example-creator-stack.com | T1 |
-| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
-| Audience | independent creators and small teams choosing AI tools | T1 |
-| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
-| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
-| Country | NL | T1 |
-| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
-| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
-| Tax form, payout / bank details | You enter these on the network profile. | T3 |
-| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
-
-**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Synthesia in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
-
-**Your step (T3):** Open https://www.synthesia.io/affiliates, review the prefilled fields, read and accept the terms, click Submit.
-
-## Impact — score 0.9 (value 2.7 ÷ setup 3)
+## Impact — score 0.6 (value 1.8 ÷ setup 3)
 
 **Network setup — Once for all Impact programs (T3): create your Impact partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.**
 
-### 8. Adobe Firefly
+### 10. Adobe Firefly
 
 - **Signup (official):** https://www.adobe.com/affiliates.html
 - **Registry state:** not-applied
@@ -265,64 +322,6 @@ Account already exists on this network: only the application remains.
 **Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
 
 **Your step (T3):** Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit.
-
-### 9. Higgsfield
-
-- **Signup (official):** https://higgsfield.ai/
-- **Registry state:** not-applied
-- **Value:** 0.9 customer-months (15%; 12 months) — terms unverified — value × 0.5
-- **Terms:** 15% (Ambassador); window 12-month; cookie 30 days
-- **Source:** https://higgsfield.ai/ (UNVERIFIED — re-read before submitting)
-- ⚠ Terms not verified against the official page — re-read them before submitting.
-- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
-
-| Field | Prefill | Tier |
-|---|---|---|
-| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
-| Additional websites | https://example-creator-stack.com | T1 |
-| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
-| Audience | independent creators and small teams choosing AI tools | T1 |
-| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
-| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
-| Country | NL | T1 |
-| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
-| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
-| Tax form, payout / bank details | You enter these on the network profile. | T3 |
-| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
-
-**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Higgsfield in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
-
-**Your step (T3):** Open https://higgsfield.ai/, review the prefilled fields, read and accept the terms, click Submit.
-
-## direct: Opus Clip — score 0.6 (value 0.6 ÷ setup 1)
-
-### 10. Opus Clip
-
-- **Signup (official):** https://www.opus.pro/affiliate
-- **Registry state:** not-applied
-- **Value:** 0.6 customer-months (rate not published; recurring, duration unstated (counted as 12 months)) — no published rate — assumed 10% so it ranks low until verified; terms unverified — value × 0.5
-- **Terms:** ~; window recurring; cookie not stated
-- **Source:** https://www.opus.pro/affiliate (UNVERIFIED — re-read before submitting)
-- ⚠ Terms not verified against the official page — re-read them before submitting.
-- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
-
-| Field | Prefill | Tier |
-|---|---|---|
-| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
-| Additional websites | https://example-creator-stack.com | T1 |
-| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
-| Audience | independent creators and small teams choosing AI tools | T1 |
-| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
-| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
-| Country | NL | T1 |
-| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
-| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
-| Tax form, payout / bank details | You enter these on the network profile. | T3 |
-| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
-
-**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Opus Clip in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
-
-**Your step (T3):** Open https://www.opus.pro/affiliate, review the prefilled fields, read and accept the terms, click Submit.
 
 ## direct: Topaz Labs — score 0.1 (value 0.1 ÷ setup 1)
 
