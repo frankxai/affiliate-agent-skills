@@ -382,7 +382,7 @@
       ]
     },
     {
-      "network": "direct: Rytr",
+      "network": "Rewardful: Rytr",
       "sharedSetup": false,
       "setupCost": 1,
       "setupAlreadyDone": false,
@@ -392,16 +392,14 @@
       "programs": [
         {
           "tool": "Rytr",
-          "network": "direct",
+          "network": "Rewardful",
           "signupUrl": "https://rytr.me/affiliates",
           "registryState": "not-in-registry",
           "value": {
             "points": 3.6,
             "rateBasis": "30%",
-            "windowBasis": "lifetime (counted as 24 months)",
-            "assumptions": [
-              "terms unverified — value × 0.5"
-            ]
+            "windowBasis": "12 months",
+            "assumptions": []
           },
           "fields": [
             {
@@ -462,21 +460,115 @@
           ],
           "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Rytr in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among writing tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
           "terms": {
-            "commission": "30%",
-            "window": "lifetime",
+            "commission": "30% for 12 months",
+            "window": "12-month",
             "cookieDays": null,
-            "detail": null,
-            "sourceUrl": "https://rytr.me/affiliates",
-            "verifiedAt": null
+            "detail": "30% of each referred paying customer's payments for 12 months from their subscription date, and nothing after that. Paid on the 1st of the month, at least 30 days after conversion, via PayPal with a $100 minimum. No Google Ads at all, no brand-keyword ads on other channels, no Rytr brand in your domain, no self-referrals. The official terms do not state a cookie window",
+            "sourceUrl": "https://affiliates.rytr.me/terms",
+            "verifiedAt": "2026-09-28"
           },
           "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Not in the relationship registry — add it there once you apply.",
-            "Catalog lists network \"direct/network\" — confirm which one the official page uses."
+            "Not in the relationship registry — add it there once you apply."
           ],
           "humanStep": {
             "tier": "T3",
             "text": "Open https://rytr.me/affiliates, review the prefilled fields, read and accept the terms, click Submit."
+          }
+        }
+      ]
+    },
+    {
+      "network": "Tapfiliate: Pollo AI",
+      "sharedSetup": false,
+      "setupCost": 1,
+      "setupAlreadyDone": false,
+      "totalValue": 3.6,
+      "score": 3.6,
+      "setupStep": null,
+      "programs": [
+        {
+          "tool": "Pollo AI",
+          "network": "Tapfiliate",
+          "signupUrl": "https://pollo.ai/affiliate-program",
+          "registryState": "not-in-registry",
+          "value": {
+            "points": 3.6,
+            "rateBasis": "30%",
+            "windowBasis": "recurring, duration unstated (counted as 12 months)",
+            "assumptions": []
+          },
+          "fields": [
+            {
+              "field": "Website / primary promotional URL",
+              "value": "https://example-ai-reviews.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Additional websites",
+              "value": "https://example-creator-stack.com",
+              "tier": "T1"
+            },
+            {
+              "field": "Niche / content category",
+              "value": "AI tool comparisons and workflow tutorials",
+              "tier": "T1"
+            },
+            {
+              "field": "Audience",
+              "value": "independent creators and small teams choosing AI tools",
+              "tier": "T1"
+            },
+            {
+              "field": "Promotional methods",
+              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
+              "tier": "T1"
+            },
+            {
+              "field": "Monthly traffic / audience size",
+              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
+              "tier": "T1"
+            },
+            {
+              "field": "Country",
+              "value": "NL",
+              "tier": "T1"
+            },
+            {
+              "field": "Why this program (pitch)",
+              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Pollo AI in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+              "tier": "T1"
+            },
+            {
+              "field": "Name, email, password, 2FA",
+              "value": "You enter these. The agent never types credentials.",
+              "tier": "T3"
+            },
+            {
+              "field": "Tax form, payout / bank details",
+              "value": "You enter these on the network profile.",
+              "tier": "T3"
+            },
+            {
+              "field": "Terms of service checkbox + Submit",
+              "value": "You read, accept, and submit.",
+              "tier": "T3"
+            }
+          ],
+          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Pollo AI in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+          "terms": {
+            "commission": "30% on first purchases, renewals and upgrades",
+            "window": "recurring",
+            "cookieDays": null,
+            "detail": "30% of every first purchase, renewal or upgrade by customers you refer (upgrades earn on the price difference). A second tier pays 10% on sales by affiliates you recruit. Refunded sales are deducted. Paid via PayPal between the 10th and 15th of each month, with a $100 minimum. No coupon sites. Paid ads may not use the Pollo brand name or logo, or pollo.ai destination URLs. The official page does not state a renewal duration or cookie window",
+            "sourceUrl": "https://pollo.ai/affiliate-program",
+            "verifiedAt": "2026-09-28"
+          },
+          "warnings": [
+            "Not in the relationship registry — add it there once you apply."
+          ],
+          "humanStep": {
+            "tier": "T3",
+            "text": "Open https://pollo.ai/affiliate-program, review the prefilled fields, read and accept the terms, click Submit."
           }
         }
       ]
@@ -774,211 +866,12 @@
       ]
     },
     {
-      "network": "direct: Freepik",
-      "sharedSetup": false,
-      "setupCost": 1,
-      "setupAlreadyDone": false,
-      "totalValue": 1.8,
-      "score": 1.8,
-      "setupStep": null,
-      "programs": [
-        {
-          "tool": "Freepik",
-          "network": "direct",
-          "signupUrl": "https://www.freepik.com/affiliates",
-          "registryState": "not-applied",
-          "value": {
-            "points": 1.8,
-            "rateBasis": "30%",
-            "windowBasis": "recurring, duration unstated (counted as 12 months)",
-            "assumptions": [
-              "terms unverified — value × 0.5"
-            ]
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Freepik in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Freepik in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "30% recurring / 20% one-time",
-            "window": "recurring",
-            "cookieDays": null,
-            "detail": null,
-            "sourceUrl": "https://www.freepik.com/affiliates",
-            "verifiedAt": null
-          },
-          "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://www.freepik.com/affiliates, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        }
-      ]
-    },
-    {
-      "network": "Impact",
-      "sharedSetup": true,
-      "setupCost": 3,
-      "setupAlreadyDone": false,
-      "totalValue": 1.8,
-      "score": 0.6,
-      "setupStep": "Once for all Impact programs (T3): create your Impact partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.",
-      "programs": [
-        {
-          "tool": "Adobe Firefly",
-          "network": "Impact",
-          "signupUrl": "https://www.adobe.com/affiliates.html",
-          "registryState": "not-applied",
-          "value": {
-            "points": 1.8,
-            "rateBasis": "30%",
-            "windowBasis": "recurring, duration unstated (counted as 12 months)",
-            "assumptions": [
-              "terms unverified — value × 0.5"
-            ]
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "~30%",
-            "window": "recurring",
-            "cookieDays": 60,
-            "detail": null,
-            "sourceUrl": "https://www.adobe.com/affiliates.html",
-            "verifiedAt": null
-          },
-          "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.",
-            "Catalog lists network \"Partnerize/Impact\" — confirm which one the official page uses."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        }
-      ]
-    },
-    {
       "network": "direct: Topaz Labs",
       "sharedSetup": false,
       "setupCost": 1,
       "setupAlreadyDone": false,
-      "totalValue": 0.1,
-      "score": 0.1,
+      "totalValue": 2.4,
+      "score": 2.4,
       "setupStep": null,
       "programs": [
         {
@@ -987,11 +880,11 @@
           "signupUrl": "https://topazlabs.com/affiliates/",
           "registryState": "not-applied",
           "value": {
-            "points": 0.1,
+            "points": 2.4,
             "rateBasis": "20%",
-            "windowBasis": "one-time",
+            "windowBasis": "12 months",
             "assumptions": [
-              "terms unverified — value × 0.5"
+              "\"up to\" rate taken at face value — the base tier may be lower"
             ]
           },
           "fields": [
@@ -1053,17 +946,15 @@
           ],
           "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Topaz Labs in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
           "terms": {
-            "commission": "20%",
-            "window": "one-time (×12 on monthly)",
+            "commission": "20% (monthly plans: 20% of each payment for up to 12 months)",
+            "window": "12-month",
             "cookieDays": 30,
-            "detail": null,
+            "detail": "20% commission. Annual-commitment subscriptions: 20% of that sale. Monthly subscriptions: 20% of each monthly payment for up to 12 months. 30-day cookie. Paid monthly via PayPal with a $50 minimum. In-house program; the Topaz marketing team reviews applications",
             "sourceUrl": "https://topazlabs.com/affiliates/",
-            "verifiedAt": null
+            "verifiedAt": "2026-09-28"
           },
           "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.",
-            "Catalog lists network \"direct/network\" — confirm which one the official page uses."
+            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
           ],
           "humanStep": {
             "tier": "T3",
@@ -1073,27 +964,24 @@
       ]
     },
     {
-      "network": "direct: Pollo AI",
-      "sharedSetup": false,
-      "setupCost": 1,
+      "network": "Partnerize",
+      "sharedSetup": true,
+      "setupCost": 3,
       "setupAlreadyDone": false,
-      "totalValue": 0.05,
-      "score": 0.05,
-      "setupStep": null,
+      "totalValue": 0.85,
+      "score": 0.28,
+      "setupStep": "Once for all Partnerize programs (T3): create your Partnerize partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.",
       "programs": [
         {
-          "tool": "Pollo AI",
-          "network": "direct",
-          "signupUrl": "https://pollo.ai/affiliate-program",
-          "registryState": "not-in-registry",
+          "tool": "Adobe Firefly",
+          "network": "Partnerize",
+          "signupUrl": "https://www.adobe.com/affiliates.html",
+          "registryState": "not-applied",
           "value": {
-            "points": 0.05,
-            "rateBasis": "rate not published",
-            "windowBasis": "window unknown (counted as one-time)",
-            "assumptions": [
-              "no published rate — assumed 10% so it ranks low until verified",
-              "terms unverified — value × 0.5"
-            ]
+            "points": 0.85,
+            "rateBasis": "85%",
+            "windowBasis": "one-time",
+            "assumptions": []
           },
           "fields": [
             {
@@ -1133,7 +1021,7 @@
             },
             {
               "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Pollo AI in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
               "tier": "T1"
             },
             {
@@ -1152,22 +1040,21 @@
               "tier": "T3"
             }
           ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Pollo AI in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
+          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
           "terms": {
-            "commission": "n/c",
-            "window": "n/c",
-            "cookieDays": null,
-            "detail": null,
-            "sourceUrl": "https://pollo.ai/affiliate-program",
-            "verifiedAt": null
+            "commission": "85% of the first month's subscription (8.33% of year one on prepaid annual plans)",
+            "window": "one-time",
+            "cookieDays": 30,
+            "detail": "One-time commission, not recurring: 85% of one month's fee on eligible monthly and annual-paid-monthly plans (Creative Cloud including single apps, Adobe Express, Document Cloud); 8.33% of the first year on prepaid annual plans; Adobe Stock has separate rates. 30-day cookie. Trial, cancelled, invalid and fraud orders earn $0. Run on Partnerize, and Adobe reviews each application. The page does not list Firefly plans by name",
+            "sourceUrl": "https://www.adobe.com/affiliates.html",
+            "verifiedAt": "2026-09-28"
           },
           "warnings": [
-            "Terms not verified against the official page — re-read them before submitting.",
-            "Not in the relationship registry — add it there once you apply."
+            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
           ],
           "humanStep": {
             "tier": "T3",
-            "text": "Open https://pollo.ai/affiliate-program, review the prefilled fields, read and accept the terms, click Submit."
+            "text": "Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit."
           }
         }
       ]
@@ -1175,17 +1062,12 @@
   ],
   "held": [
     {
-      "tool": "Pika",
+      "tool": "Freepik",
       "network": "direct",
       "reason": "catalog marks this program \"verify\" — confirm the program and terms before preparing an application"
     },
     {
       "tool": "Whop",
-      "network": "direct",
-      "reason": "catalog marks this program \"verify\" — confirm the program and terms before preparing an application"
-    },
-    {
-      "tool": "OpenRouter",
       "network": "direct",
       "reason": "catalog marks this program \"verify\" — confirm the program and terms before preparing an application"
     }
@@ -1212,8 +1094,16 @@
       "reason": "eligibility: needs a video or social channel with 5,000+ audience; publisher has none (Social Creator Program: 5K+ followers, original video content only; no SEO/blog-only promotion; https://www.heygen.com/affiliate-program, verified 2026-09-28)"
     },
     {
+      "tool": "Pika",
+      "reason": "no affiliate program (dead-end)"
+    },
+    {
       "tool": "Canva",
-      "reason": "eligibility: registry allows only social; publisher channels map to web/email"
+      "reason": "no affiliate program (closed)"
+    },
+    {
+      "tool": "OpenRouter",
+      "reason": "no affiliate program (dead-end)"
     },
     {
       "tool": "OpenAI",
