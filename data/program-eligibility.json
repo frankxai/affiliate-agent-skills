@@ -1,0 +1,14 @@
+{
+  "_comment": "Channel/audience requirements that a program's own official terms impose on publishers. Public facts only, each with source + verification date. Read by src/join-queue.ts to exclude programs a publisher cannot qualify for. Add a rule only when the official page states it.",
+  "updatedAt": "2026-09-28",
+  "rules": [
+    {
+      "tool": "HeyGen",
+      "qualifyingChannels": ["video", "social"],
+      "minAudience": 5000,
+      "summary": "Social Creator Program: 5K+ followers, original video content only; no SEO/blog-only promotion",
+      "source": "https://www.heygen.com/affiliate-program",
+      "verifiedAt": "2026-09-28"
+    }
+  ]
+}

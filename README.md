@@ -49,6 +49,8 @@ node --loader ts-node/esm src/trinity-registry.ts
 | `scripts/affiliate-audit.mjs` | Join catalog × a site's content × traffic → which programs to join + which posts to link. |
 | `skills/affiliate-audit/` | Agent skill wrapping the audit + the strategy rules. |
 | `skills/agentic-income/` | The operating brain: what to build next, where money comes from, how it compounds. |
+| `scripts/affiliate-join-queue.mjs` + `src/join-queue.ts` | Affiliate Ops Agent phase 1: catalog × relationship registry × publisher → ranked, network-grouped application packets (human clicks Submit). |
+| `skills/affiliate-ops/` | Agent skill for the join queue and the T0–T3 boundary. |
 | `src/trinity-registry.ts` | **Trinity Registry implementation** (discover, monetize, one-click deploy, MCP exposure, gallery). |
 | `content-backlog.md` | The 22-post long-tail/AEO pipeline (shared across all sites). |
 | `BUSINESS.md` | The full business plan — model, network, scaling, the four self-improving loops, roadmap. |
