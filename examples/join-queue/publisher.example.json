@@ -1,0 +1,43 @@
+{
+  "_comment": "SYNTHETIC publisher. Declare only facts you can evidence; omit audienceSize when unknown. Channel types: blog, newsletter, video, social.",
+  "name": "Example Publisher",
+  "sites": [
+    {
+      "url": "https://example-ai-reviews.com",
+      "focus": "AI tool comparisons"
+    },
+    {
+      "url": "https://example-creator-stack.com",
+      "focus": "creator workflow tutorials"
+    }
+  ],
+  "niche": "AI tool comparisons and workflow tutorials",
+  "audience": "independent creators and small teams choosing AI tools",
+  "channels": [
+    {
+      "type": "blog",
+      "url": "https://example-ai-reviews.com"
+    },
+    {
+      "type": "blog",
+      "url": "https://example-creator-stack.com"
+    },
+    {
+      "type": "newsletter",
+      "audienceSize": 800
+    }
+  ],
+  "promotionMethods": [
+    "comparison articles",
+    "hands-on reviews",
+    "tutorials",
+    "a weekly newsletter"
+  ],
+  "trafficFacts": [
+    {
+      "statement": "about 800 newsletter subscribers",
+      "asOf": "2026-09-01"
+    }
+  ],
+  "country": "NL"
+}
