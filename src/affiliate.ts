@@ -16,8 +16,9 @@ export function findProgram(tool: string): Program | undefined {
   );
 }
 
+/** Programs worth joining now. Held rows (status "verify") are excluded until their terms or eligibility are confirmed. */
 export function payingPrograms(): Program[] {
-  return getPrograms().filter((p) => p.hasProgram && p.status !== 'closed' && p.status !== 'dead-end')
+  return getPrograms().filter((p) => p.hasProgram && p.status !== 'closed' && p.status !== 'dead-end' && p.status !== 'verify')
     .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
 }
 

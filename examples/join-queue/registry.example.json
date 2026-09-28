@@ -132,8 +132,8 @@
       "evidence": {}
     },
     {
-      "tool": "Freepik",
-      "network": "multiple",
+      "tool": "Magnific",
+      "network": "direct",
       "status": "active",
       "relationshipState": "not-applied",
       "trackingState": "missing",
