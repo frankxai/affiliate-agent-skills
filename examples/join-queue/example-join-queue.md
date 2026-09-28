@@ -24,8 +24,7 @@ The agent prepared everything below (T1). Every Submit is yours (T3): the agent 
 | 7 | direct: Higgsfield | Higgsfield | 3 | 3 | T3: open, review, accept terms, Submit |
 | 8 | Rewardful: Opus Clip | Opus Clip | 3 | 3 | T3: open, review, accept terms, Submit |
 | 9 | Rewardful: Synthesia | Synthesia | 3 | 3 | T3: open, review, accept terms, Submit |
-| 10 | direct: Topaz Labs | Topaz Labs | 2.4 | 2.4 | T3: open, review, accept terms, Submit |
-| 11 | Partnerize | Adobe Firefly | 0.85 | 0.28 | T3: open, review, accept terms, Submit |
+| 10 | direct: Topaz Labs | Topaz Labs | 0.2 | 0.2 | T3: open, review, accept terms, Submit |
 
 ## direct: Systeme.io — score 14.4 (value 14.4 ÷ setup 1)
 
@@ -286,14 +285,14 @@ Account already exists on this network: only the application remains.
 
 **Your step (T3):** Open https://www.synthesia.io/partners/affiliates, review the prefilled fields, read and accept the terms, click Submit.
 
-## direct: Topaz Labs — score 2.4 (value 2.4 ÷ setup 1)
+## direct: Topaz Labs — score 0.2 (value 0.2 ÷ setup 1)
 
 ### 10. Topaz Labs
 
 - **Signup (official):** https://topazlabs.com/affiliates/
 - **Registry state:** not-applied
-- **Value:** 2.4 customer-months (20%; 12 months) — "up to" rate taken at face value — the base tier may be lower
-- **Terms:** 20% (monthly plans: 20% of each payment for up to 12 months); window 12-month; cookie 30 days. 20% commission. Annual-commitment subscriptions: 20% of that sale. Monthly subscriptions: 20% of each monthly payment for up to 12 months. 30-day cookie. Paid monthly via PayPal with a $50 minimum. In-house program; the Topaz marketing team reviews applications
+- **Value:** 0.2 customer-months (20%; one-time) — "up to" rate taken at face value — the base tier may be lower
+- **Terms:** 20% (monthly plans: 20% of each payment for up to 12 months); window one-time (annual) / up to 12 payments (monthly); cookie 30 days. 20% commission. Annual-commitment subscriptions: 20% of that sale. Monthly subscriptions: 20% of each monthly payment for up to 12 months. 30-day cookie. Paid monthly via PayPal with a $50 minimum. In-house program; the Topaz marketing team reviews applications
 - **Source:** https://topazlabs.com/affiliates/ (verified 2026-09-28)
 - ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
 
@@ -315,40 +314,10 @@ Account already exists on this network: only the application remains.
 
 **Your step (T3):** Open https://topazlabs.com/affiliates/, review the prefilled fields, read and accept the terms, click Submit.
 
-## Partnerize — score 0.28 (value 0.85 ÷ setup 3)
-
-**Network setup — Once for all Partnerize programs (T3): create your Partnerize partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.**
-
-### 11. Adobe Firefly
-
-- **Signup (official):** https://www.adobe.com/affiliates.html
-- **Registry state:** not-applied
-- **Value:** 0.85 customer-months (85%; one-time)
-- **Terms:** 85% of the first month's subscription (8.33% of year one on prepaid annual plans); window one-time; cookie 30 days. One-time commission, not recurring: 85% of one month's fee on eligible monthly and annual-paid-monthly plans (Creative Cloud including single apps, Adobe Express, Document Cloud); 8.33% of the first year on prepaid annual plans; Adobe Stock has separate rates. 30-day cookie. Trial, cancelled, invalid and fraud orders earn $0. Run on Partnerize, and Adobe reviews each application. The page does not list Firefly plans by name
-- **Source:** https://www.adobe.com/affiliates.html (verified 2026-09-28)
-- ⚠ Allowed channels not recorded — confirm blog/web promotion is permitted in the terms.
-
-| Field | Prefill | Tier |
-|---|---|---|
-| Website / primary promotional URL | https://example-ai-reviews.com | T1 |
-| Additional websites | https://example-creator-stack.com | T1 |
-| Niche / content category | AI tool comparisons and workflow tutorials | T1 |
-| Audience | independent creators and small teams choosing AI tools | T1 |
-| Promotional methods | comparison articles; hands-on reviews; tutorials; a weekly newsletter | T1 |
-| Monthly traffic / audience size | about 800 newsletter subscribers (as of 2026-09-01) | T1 |
-| Country | NL | T1 |
-| Why this program (pitch) | I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01). | T1 |
-| Name, email, password, 2FA | You enter these. The agent never types credentials. | T3 |
-| Tax form, payout / bank details | You enter these on the network profile. | T3 |
-| Terms of service checkbox + Submit | You read, accept, and submit. | T3 |
-
-**Draft pitch:** I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).
-
-**Your step (T3):** Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit.
-
 ## Held — verify before preparing
 
-- **Freepik** (direct): catalog marks this program "verify" — confirm the program and terms before preparing an application
+- **Adobe Firefly** (Partnerize): catalog marks this program "verify" — confirm the program and terms before preparing an application
+- **Magnific** (direct): catalog marks this program "verify" — confirm the program and terms before preparing an application
 - **Whop** (direct): catalog marks this program "verify" — confirm the program and terms before preparing an application
 
 ## Excluded

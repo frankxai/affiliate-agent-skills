@@ -870,8 +870,8 @@
       "sharedSetup": false,
       "setupCost": 1,
       "setupAlreadyDone": false,
-      "totalValue": 2.4,
-      "score": 2.4,
+      "totalValue": 0.2,
+      "score": 0.2,
       "setupStep": null,
       "programs": [
         {
@@ -880,9 +880,9 @@
           "signupUrl": "https://topazlabs.com/affiliates/",
           "registryState": "not-applied",
           "value": {
-            "points": 2.4,
+            "points": 0.2,
             "rateBasis": "20%",
-            "windowBasis": "12 months",
+            "windowBasis": "one-time",
             "assumptions": [
               "\"up to\" rate taken at face value — the base tier may be lower"
             ]
@@ -947,7 +947,7 @@
           "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Topaz Labs in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among video tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
           "terms": {
             "commission": "20% (monthly plans: 20% of each payment for up to 12 months)",
-            "window": "12-month",
+            "window": "one-time (annual) / up to 12 payments (monthly)",
             "cookieDays": 30,
             "detail": "20% commission. Annual-commitment subscriptions: 20% of that sale. Monthly subscriptions: 20% of each monthly payment for up to 12 months. 30-day cookie. Paid monthly via PayPal with a $50 minimum. In-house program; the Topaz marketing team reviews applications",
             "sourceUrl": "https://topazlabs.com/affiliates/",
@@ -962,107 +962,16 @@
           }
         }
       ]
-    },
-    {
-      "network": "Partnerize",
-      "sharedSetup": true,
-      "setupCost": 3,
-      "setupAlreadyDone": false,
-      "totalValue": 0.85,
-      "score": 0.28,
-      "setupStep": "Once for all Partnerize programs (T3): create your Partnerize partner account, verify identity, complete the tax form (W-9 or W-8BEN) and payout profile yourself.",
-      "programs": [
-        {
-          "tool": "Adobe Firefly",
-          "network": "Partnerize",
-          "signupUrl": "https://www.adobe.com/affiliates.html",
-          "registryState": "not-applied",
-          "value": {
-            "points": 0.85,
-            "rateBasis": "85%",
-            "windowBasis": "one-time",
-            "assumptions": []
-          },
-          "fields": [
-            {
-              "field": "Website / primary promotional URL",
-              "value": "https://example-ai-reviews.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Additional websites",
-              "value": "https://example-creator-stack.com",
-              "tier": "T1"
-            },
-            {
-              "field": "Niche / content category",
-              "value": "AI tool comparisons and workflow tutorials",
-              "tier": "T1"
-            },
-            {
-              "field": "Audience",
-              "value": "independent creators and small teams choosing AI tools",
-              "tier": "T1"
-            },
-            {
-              "field": "Promotional methods",
-              "value": "comparison articles; hands-on reviews; tutorials; a weekly newsletter",
-              "tier": "T1"
-            },
-            {
-              "field": "Monthly traffic / audience size",
-              "value": "about 800 newsletter subscribers (as of 2026-09-01)",
-              "tier": "T1"
-            },
-            {
-              "field": "Country",
-              "value": "NL",
-              "tier": "T1"
-            },
-            {
-              "field": "Why this program (pitch)",
-              "value": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-              "tier": "T1"
-            },
-            {
-              "field": "Name, email, password, 2FA",
-              "value": "You enter these. The agent never types credentials.",
-              "tier": "T3"
-            },
-            {
-              "field": "Tax form, payout / bank details",
-              "value": "You enter these on the network profile.",
-              "tier": "T3"
-            },
-            {
-              "field": "Terms of service checkbox + Submit",
-              "value": "You read, accept, and submit.",
-              "tier": "T3"
-            }
-          ],
-          "pitch": "I run example-ai-reviews.com and example-creator-stack.com, covering AI tool comparisons and workflow tutorials for independent creators and small teams choosing AI tools. I'd feature Adobe Firefly in comparison articles, hands-on reviews, tutorials and a weekly newsletter where it is the honest pick among image tools, with an affiliate disclosure on every page. Current reach: about 800 newsletter subscribers (as of 2026-09-01).",
-          "terms": {
-            "commission": "85% of the first month's subscription (8.33% of year one on prepaid annual plans)",
-            "window": "one-time",
-            "cookieDays": 30,
-            "detail": "One-time commission, not recurring: 85% of one month's fee on eligible monthly and annual-paid-monthly plans (Creative Cloud including single apps, Adobe Express, Document Cloud); 8.33% of the first year on prepaid annual plans; Adobe Stock has separate rates. 30-day cookie. Trial, cancelled, invalid and fraud orders earn $0. Run on Partnerize, and Adobe reviews each application. The page does not list Firefly plans by name",
-            "sourceUrl": "https://www.adobe.com/affiliates.html",
-            "verifiedAt": "2026-09-28"
-          },
-          "warnings": [
-            "Allowed channels not recorded — confirm blog/web promotion is permitted in the terms."
-          ],
-          "humanStep": {
-            "tier": "T3",
-            "text": "Open https://www.adobe.com/affiliates.html, review the prefilled fields, read and accept the terms, click Submit."
-          }
-        }
-      ]
     }
   ],
   "held": [
     {
-      "tool": "Freepik",
+      "tool": "Adobe Firefly",
+      "network": "Partnerize",
+      "reason": "catalog marks this program \"verify\" — confirm the program and terms before preparing an application"
+    },
+    {
+      "tool": "Magnific",
       "network": "direct",
       "reason": "catalog marks this program \"verify\" — confirm the program and terms before preparing an application"
     },
