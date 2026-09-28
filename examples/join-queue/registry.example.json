@@ -1,0 +1,287 @@
+{
+  "_comment": "SYNTHETIC example registry for tests and the committed example run. Not anyone's real relationship state. Shape follows go-agenticincome data/programs.schema.json.",
+  "updatedAt": "2026-09-28",
+  "disclosure": "Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested.",
+  "programs": [
+    {
+      "tool": "Higgsfield",
+      "network": "Impact.com",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Systeme.io",
+      "network": "direct",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "CapCut",
+      "network": "Impact",
+      "status": "active",
+      "relationshipState": "rejected",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "ElevenLabs",
+      "network": "PartnerStack",
+      "status": "active",
+      "relationshipState": "approved",
+      "trackingState": "verified",
+      "allowedChannels": [
+        "web",
+        "email"
+      ],
+      "evidence": {
+        "approvalRef": "example:approval-001",
+        "linkVerificationRef": "example:linkcheck-001",
+        "termsRef": "example:terms-001",
+        "termsReviewedAt": "2026-09-01T00:00:00Z"
+      },
+      "ourLink": "https://example.com/r/elevenlabs"
+    },
+    {
+      "tool": "Writesonic",
+      "network": "FirstPromoter",
+      "status": "active",
+      "relationshipState": "submitted",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Adobe Firefly",
+      "network": "Partnerize/Impact",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Jasper",
+      "network": "FirstPromoter",
+      "status": "deprioritized",
+      "relationshipState": "deprioritized",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Gamma",
+      "network": "PartnerStack",
+      "status": "active",
+      "relationshipState": "application-draft",
+      "trackingState": "missing",
+      "allowedChannels": [
+        "web"
+      ],
+      "evidence": {}
+    },
+    {
+      "tool": "HeyGen",
+      "network": "direct",
+      "status": "verify",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Synthesia",
+      "network": "direct",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Opus Clip",
+      "network": "direct",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Topaz Labs",
+      "network": "direct/network",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Pika",
+      "network": "direct",
+      "status": "verify",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Freepik",
+      "network": "multiple",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Canva",
+      "network": "Impact",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [
+        "social"
+      ],
+      "evidence": {}
+    },
+    {
+      "tool": "Descript",
+      "network": "PartnerStack",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Whop",
+      "network": "direct",
+      "status": "verify",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "OpenRouter",
+      "network": "direct",
+      "status": "verify",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Notion",
+      "network": "PartnerStack",
+      "status": "active",
+      "relationshipState": "not-applied",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "OpenAI",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Anthropic",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Google",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Runway",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Luma",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Kling",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Midjourney",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Ideogram",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Recraft",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Black Forest Labs",
+      "status": "dead-end",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Leonardo.ai",
+      "status": "closed",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    },
+    {
+      "tool": "Perplexity",
+      "status": "closed",
+      "relationshipState": "unavailable",
+      "trackingState": "missing",
+      "allowedChannels": [],
+      "evidence": {}
+    }
+  ]
+}

@@ -32,7 +32,8 @@
     "type-check": "tsc --noEmit",
     "audit": "node scripts/affiliate-audit.mjs",
     "catalog:publish": "node scripts/publish-catalog.mjs",
-    "test": "node --test tests/*.mjs || echo 'add tests'",
+    "test": "tsc --build && node --test \"tests/*.test.mjs\"",
+    "join-queue": "node scripts/affiliate-join-queue.mjs",
     "lint": "echo 'add eslint if needed'"
   },
   "files": [
