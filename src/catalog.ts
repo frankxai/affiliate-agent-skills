@@ -14,6 +14,14 @@ export type Program = {
   ourLink?: string | null;
   status?: string;
   note?: string;
+  /** Date (YYYY-MM-DD) the row was last checked against a primary source. */
+  verifiedAt?: string;
+  /** Plain-language summary of the official commission terms. */
+  commissionNote?: string;
+  /** Official program page the commission terms were read from. */
+  commissionSourceUrl?: string;
+  /** Date (YYYY-MM-DD) the commission terms were verified on commissionSourceUrl. */
+  commissionVerifiedAt?: string;
 };
 
 export type Catalog = {
