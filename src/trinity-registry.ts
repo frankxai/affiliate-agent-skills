@@ -121,8 +121,8 @@ export function executeTrinityAction(action: string, params: Record<string, unkn
     case 'trinity/marketplace/list':
       return { skills: listDiscoverableSkills(registry), templates: getTemplateGallery(registry) };
     case 'trinity/marketplace/deploy': {
-      const skillId = (typeof params.skillId === 'string' && params.skillId) ? params.skillId : 'trinity-income-router';
-      const targetAgent = (typeof params.targetAgent === 'string' && params.targetAgent) ? params.targetAgent : 'Hermes';
+      const skillId = params.skillId ? (params.skillId as string) : 'trinity-income-router';
+      const targetAgent = params.targetAgent ? (params.targetAgent as string) : 'Hermes';
       return oneClickDeploy(skillId, targetAgent);
     }
     case 'trinity/public-trust/verify':
