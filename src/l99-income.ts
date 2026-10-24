@@ -12,7 +12,7 @@ export type IncomeL99Score = {
   redirectorHealth: number; // % of programs with live ourLink that resolve via go. (stub)
   loopHealth: number; // placeholder for audit cadence, backlog, outcomes
   pendingGates: string[];
-  details: any;
+  details: Record<string, unknown>;
 };
 
 export function incomeL99(): IncomeL99Score {
