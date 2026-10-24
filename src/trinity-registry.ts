@@ -44,13 +44,13 @@ export interface TrinityRegistry {
   name: string;
   description: string;
   lastUpdated: string;
-  trinityBranding: any;
-  marketplaceMechanics: any;
-  crossAgentRegistration: any;
-  mcpExposure: any;
+  trinityBranding: { tagline: string; stages: string[]; publicTrust: string; };
+  marketplaceMechanics: { feeModels: Record<string, string>; oneClickDeploy: string; templateGallery: string; };
+  crossAgentRegistration: Record<string, string>;
+  mcpExposure: { enabled: boolean; trinityActions: string[]; protocol: string; };
   skills: TrinitySkill[];
   templates: TrinityTemplate[];
-  marketplaceStats: any;
+  marketplaceStats: { totalSkills: number; totalTemplates: number; totalDeployments: number; avgFee: string; };
 }
 
 const REGISTRY_PATH = path.resolve(__dirname, '../data/trinity-skill-registry.json');
@@ -110,7 +110,7 @@ export function exposeMCPActions(registry: TrinityRegistry = loadTrinityRegistry
 }
 
 // Example Trinity action execution (MCP callable)
-export function executeTrinityAction(action: string, params: any = {}): any {
+export function executeTrinityAction(action: string, params: Record<string, unknown> = {}): unknown {
   const registry = loadTrinityRegistry();
   if (!registry.mcpExposure.trinityActions.includes(action)) {
     throw new Error(`MCP action ${action} not exposed`);
@@ -120,8 +120,11 @@ export function executeTrinityAction(action: string, params: any = {}): any {
       return { status: 'healthy', trinityVersion: registry.version, stages: registry.trinityBranding.stages, publicTrust: registry.trinityBranding.publicTrust };
     case 'trinity/marketplace/list':
       return { skills: listDiscoverableSkills(registry), templates: getTemplateGallery(registry) };
-    case 'trinity/marketplace/deploy':
-      return oneClickDeploy(params.skillId || 'trinity-income-router', params.targetAgent || 'Hermes');
+    case 'trinity/marketplace/deploy': {
+      const skillId = params.skillId ? (params.skillId as string) : 'trinity-income-router';
+      const targetAgent = params.targetAgent ? (params.targetAgent as string) : 'Hermes';
+      return oneClickDeploy(skillId, targetAgent);
+    }
     case 'trinity/public-trust/verify':
       return { verified: true, proof: 'public-trust.test.mjs passed', timestamp: new Date().toISOString() };
     default:
