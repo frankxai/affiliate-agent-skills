@@ -4,7 +4,7 @@ The shared engine for the **agentic-income network** — a hub-and-spoke of hone
 
 ## What this is — and what it is not
 
-This repo is a **skill engine and an affiliate-audit toolkit**: an affiliate-program catalog, an audit that maps catalog × a site's content × traffic, three agent skills, and a registry of skills with proposed marketplace mechanics.
+This repo is a **skill engine and an affiliate-audit toolkit**: an affiliate-program catalog, an audit that maps catalog x a site's content x traffic, three agent skills, and a registry of skills with proposed marketplace mechanics.
 
 It is **not** financial advice, and it is not a promise of income. The fee and keep models (`marketplaceMechanics.feeModels` in `data/trinity-skill-registry.json`) are **proposals** — how a marketplace could work, not terms that are in force. Commission rates, cookie windows, and program availability change without notice; re-verify them in `data/programs.json` before relying on any number here. Nothing in this repo guarantees earnings.
 
@@ -60,10 +60,10 @@ npm test
 | `data/programs.json` | **Source of truth.** Every AI-tool affiliate program: commission, recurring, cookie, network, signup URL, `ourLink`. |
 | `data/programs.csv` | Spreadsheet mirror. |
 | `data/trinity-skill-registry.json` | **Trinity Registry + Marketplace data** (skills, templates, MCP actions, fee models, cross-agent). |
-| `scripts/affiliate-audit.mjs` | Join catalog × a site's content × traffic → which programs to join + which posts to link. |
-| `skills/affiliate-audit/` | Agent skill wrapping the audit + the strategy rules: the money loop, catalog × content × traffic → programs to join + posts to link. |
+| `scripts/affiliate-audit.mjs` | Join catalog x a site's content x traffic -> which programs to join + which posts to link. |
+| `skills/affiliate-audit/` | Agent skill wrapping the audit + the strategy rules: the money loop, catalog x content x traffic -> programs to join + posts to link. |
 | `skills/agentic-income/` | The operating brain: what to build next, where money comes from, how it compounds. |
-| `scripts/affiliate-join-queue.mjs` + `src/join-queue.ts` | Affiliate Ops Agent phase 1: catalog × relationship registry × publisher → ranked, network-grouped application packets (human clicks Submit). |
+| `scripts/affiliate-join-queue.mjs` + `src/join-queue.ts` | Affiliate Ops Agent phase 1: catalog x relationship registry x publisher -> ranked, network-grouped application packets (human clicks Submit). |
 | `skills/affiliate-ops/` | Agent skill for the join queue and the T0–T3 boundary. |
 | `src/trinity-registry.ts` | **Trinity Registry implementation** (discover, monetize, one-click deploy, MCP exposure, gallery). |
 | `content-backlog.md` | The 22-post long-tail/AEO pipeline (shared across all sites). |
