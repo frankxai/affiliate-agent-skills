@@ -5,7 +5,7 @@
  * template gallery, MCP exposure for all Trinity actions, cross-agent registration.
  * Trinity branding: Sovereign Agentic Passive Income OS — Earn • Automate • Compound.
  * Public-trust: All entries verified; honest, verifiable execution.
- * Explicit Windows paths: C:/Users/frank/starlight/repos/affiliate-agent-skills/...
+ * Paths: repo-relative only in committed files; no local absolute paths.
  */
 
 import * as fs from 'fs';

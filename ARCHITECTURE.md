@@ -43,7 +43,7 @@ Different search audiences, minimal content overlap, shared engine = near-zero m
 
 ## Ready-to-run new-session prompt
 
-> Paste this into a fresh Claude Code session opened in `starlight/repos/agenticpassiveincome`:
+> Paste this into a fresh Claude Code session opened in `<workspace>/agenticpassiveincome`:
 
 ```
 Scaffold agenticpassiveincome as a Next.js 16 (App Router) MDX affiliate site.

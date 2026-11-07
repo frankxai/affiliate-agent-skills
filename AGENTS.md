@@ -8,7 +8,7 @@ This repo is part of the FrankX / Starlight / Arcanea agent estate.
 - Class: Canonical Trinity Income Portfolio Registry + Marketplace
 - Default health command: pnpm build && node -e "import('./dist/trinity-registry.js').then(m => console.log('Trinity Registry OK'))"
 - Remote: https://github.com/frankxai/affiliate-agent-skills.git
-- Explicit Windows paths: C:/Users/frank/starlight/repos/affiliate-agent-skills/...
+- Local paths: use your own clone; committed files stay repo-relative.
 
 ## Trinity Branding & Marketplace Absorption (2026-07-14)
 
@@ -28,7 +28,7 @@ This repo is part of the FrankX / Starlight / Arcanea agent estate.
 - Prefer existing repo conventions over new abstractions.
 - Run the health command before handoff when feasible.
 - Do not publish secrets, private memory, credentials, or internal-only strategy.
-- Always use explicit Windows paths (C:/Users/frank/... or /c/Users/frank/...) for local operations.
+- Use repo-relative paths in committed files. Never commit absolute local paths, usernames, or machine-specific roots.
 
 ## Class-Specific Guidance
 
@@ -46,11 +46,11 @@ Summarize changed files, validation run, risks, and any follow-up needed.
 
 For any site, app, landing page, dashboard, visual identity, brand, motion, media, social, or frontend task, apply the shared Design Taste Kernel before handoff:
 
-- C:/Users/frank/starlight/repos/DESIGN_TASTE.md
-- C:/Users/frank/starlight/repos/WEB_EXPERIENCE_STANDARD.md
-- C:/Users/frank/starlight/repos/MOTION_TASTE_RUBRIC.md
-- C:/Users/frank/starlight/repos/MULTI_AGENT_DESIGN_COUNCIL.md
-- C:/Users/frank/starlight/repos/VISUAL_QA_GATE.md
+- <workspace>/DESIGN_TASTE.md
+- <workspace>/WEB_EXPERIENCE_STANDARD.md
+- <workspace>/MOTION_TASTE_RUBRIC.md
+- <workspace>/MULTI_AGENT_DESIGN_COUNCIL.md
+- <workspace>/VISUAL_QA_GATE.md
 
 When motion, scroll, generated media, GIF/video, or premium polish matters, route through the Motion Design Studio plugin/skills and verify the result visually.
 
