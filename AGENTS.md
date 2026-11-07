@@ -6,7 +6,7 @@ This repo is part of the FrankX / Starlight / Arcanea agent estate.
 
 - Repo: affiliate-agent-skills (Shared Engine)
 - Class: Canonical Trinity Income Portfolio Registry + Marketplace
-- Default health command: pnpm build && node -e "import('./dist/trinity-registry.js').then(m => console.log('Trinity Registry OK'))"
+- Default health command: npm run build && node -e "import('./dist/src/trinity-registry.js').then(m => console.log('Trinity Registry OK:', m.loadTrinityRegistry().name))"
 - Remote: https://github.com/frankxai/affiliate-agent-skills.git
 - Local paths: use your own clone; committed files stay repo-relative.
 
