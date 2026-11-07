@@ -53,7 +53,23 @@ export interface TrinityRegistry {
   marketplaceStats: { totalSkills: number; totalTemplates: number; totalDeployments: number; avgFee: string; };
 }
 
-const REGISTRY_PATH = path.resolve(__dirname, '../data/trinity-skill-registry.json');
+const REGISTRY_FILENAME = 'data/trinity-skill-registry.json';
+
+// Resolve from the module's own directory so the registry loads from both the
+// TypeScript source and the compiled dist/src output.
+function findRegistryPath(startDir: string): string {
+  let dir = startDir;
+  for (let depth = 0; depth < 5; depth++) {
+    const candidate = path.join(dir, REGISTRY_FILENAME);
+    if (fs.existsSync(candidate)) return candidate;
+    const parent = path.dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  throw new Error(`Trinity registry not found: ${REGISTRY_FILENAME} (searched upwards from ${startDir})`);
+}
+
+const REGISTRY_PATH = findRegistryPath(import.meta.dirname);
 
 export function loadTrinityRegistry(): TrinityRegistry {
   const raw = fs.readFileSync(REGISTRY_PATH, 'utf-8');
@@ -88,7 +104,7 @@ export function oneClickDeploy(skillId: string, targetAgent: string = 'Hermes', 
   // Simulate one-click: return deploy command (in real: exec script, symlink, MCP call)
   const deployCmd = skill.deployScript.includes('hermes') 
     ? `hermes profile create ${skill.id} --clone default && ${skill.deployScript}`
-    : `cd C:/Users/frank/starlight/repos/affiliate-agent-skills && node ${skill.deployScript} --target ${targetAgent}`;
+    : `node ${skill.deployScript} --target ${targetAgent}`;
   return `One-click deploy to ${targetAgent}: ${deployCmd} (MCP-exposed: ${skill.mcpTools.join(', ')})`;
 }
 
