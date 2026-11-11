@@ -40,4 +40,18 @@ Researched 2026-06-05. Each post is a comparison/commercial-intent piece in the 
 - **D. Get Cited by AI: the AEO Playbook 2026** → best AEO tools, AEO-vs-GEO-vs-SEO, how to structure for citation, schema, AI-visibility tracking → compounds the whole blog's own AEO
 - **E. Build a Personal AI CoE Under $100/mo** → the exact stack, cheapest frontier access, no-code agents, AI writer, presentation maker → maps directly to the ACOS / Personal-AI-CoE brand narrative. **Strongest brand fit — affiliate links read as service, not promotion.**
 
+- **F. Give Your Agent the Web (Apify cluster, added 2026-11-11)** → see below. Strongest fit with agenticpassiveincome's "elimination before generation" stance: every piece names the stop condition and the cheaper path.
+
+## Apify cluster (joined 2026-11-11, ref vzmwk5; links stay plain text until hands-on evidence clears the site's editorial gate)
+
+| # | Title | Query | Shape | Status |
+|---|-------|-------|-------|--------|
+| F1 | Give Your Agent the Web: When Apify Is the Right Layer, and When It Is Not | "apify mcp claude" | Evaluation guide + architecture diagram | Drafted on agenticpassiveincome `agent/claude/apify-guides` |
+| F2 | A Competitor Price Watch Your Agent Runs, With a Stop Condition | "monitor competitor prices automatically" | Workflow guide + loop diagram | Drafted on the same branch |
+| F3 | Apify vs Firecrawl vs Bright Data for Agent Builders | "apify vs firecrawl" | Comparison table; needs one identical task run on all three | Needs hands-on run (Frank approves spend) |
+| F4 | Creator Trend Radar: What Your Audience Watched This Week | "track youtube trends automatically" | GenCreator workflow; Actor list + review gate | Backlog |
+| F5 | Publish Your Own Actor: Turning an Internal Tool Into Usage Revenue | "make money apify actor" | Developer-side guide; Apify Store monetization | Backlog; verify Store terms first |
+
+Rules for this cluster: no paid ads (Apify terms pay nothing on paid traffic); no commission figures in public copy until partners@apify.com confirms the cap; no Apify logo until the official kit is downloaded and its usage rules are read.
+
 ## Source: research agent run 2026-06-05 (sources cited in session log)
