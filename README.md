@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/github/header.svg" alt="Affiliate Agent Skills: disclosure-first affiliate engineering, drawn as four linked steps — catalog, audit, disclosure, payout — with the note that no earnings are promised" width="100%">
+</p>
+
 # affiliate-agent-skills
 
 The shared engine for the **agentic-income network** — a hub-and-spoke of honest AI-tool comparison sites. Open source on purpose: giving the method away is the distribution. See [`BUSINESS.md`](./BUSINESS.md) for the full plan.
