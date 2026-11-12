@@ -1,0 +1,86 @@
+# affiliate-agent-skills
+
+> Skill engine and audit toolkit for AI-tool affiliate programs: a catalog of programs, an audit that maps the catalog against a site's content and traffic, and three file-based agent skills. MIT. Not financial advice, and not a promise of income.
+
+This repository is the shared engine for a hub-and-spoke set of AI-tool comparison sites. It holds data, scripts and skill files. It is consumed by other repositories; it does not host a website or a service.
+
+## What it is
+
+- **A catalog.** `data/programs.json` lists 35 AI-tool affiliate programs with commission terms, networks, signup URLs and a status flag per program.
+- **An audit.** `scripts/affiliate-audit.mjs` joins the catalog with a site's content and traffic, and reports which programs to join and which posts to link.
+- **Three agent skills.** Plain Markdown skill folders under `skills/`.
+- **An operations queue.** `scripts/affiliate-join-queue.mjs` ranks programs to apply to and prepares application packets; a human performs the submit click.
+- **A registry of skills.** `data/trinity-skill-registry.json` models a marketplace and MCP-callable actions. Its fee models are proposals, not terms in force.
+
+It is not financial advice, not a promise of earnings, and not a hosted product.
+
+## Install
+
+```bash
+git clone https://github.com/frankxai/affiliate-agent-skills.git
+cd affiliate-agent-skills
+npm install
+npm test
+```
+
+`npm test` runs `tsc --build` and then the unit tests in `tests/`. There is no runtime service to start.
+
+## The three skills
+
+| Skill | Path | What it does |
+|-------|------|--------------|
+| `agentic-income` | `skills/agentic-income/SKILL.md` | The operating brain: what to build next, where money comes from, how it compounds. Composes `affiliate-audit`. |
+| `affiliate-audit` | `skills/affiliate-audit/SKILL.md` | Maps catalog x content x traffic: which programs to join, which posts to link. |
+| `affiliate-ops` | `skills/affiliate-ops/SKILL.md` | Builds the join queue up to, never including, the consent click. Carries the T0-T3 boundary. |
+
+Each skill is a folder with a `SKILL.md` whose front matter holds `name` and `description`. Copy the folder into your agent's skills directory, or point the agent at this repository.
+
+## Source of truth
+
+`data/programs.json` is the source of truth for every program: commission, recurring or one-time, cookie window, network, signup URL, `ourLink`, and `status`.
+
+- `data/programs.csv` is a spreadsheet mirror of the same rows.
+- Set `ourLink` when a program is joined; leave it `null` until then. Every consumer reads it from here.
+- `status` marks rows the audit should ignore: `dead-end` (no program), `closed` (not accepting), `verify` (terms not confirmed), `deprioritized`.
+- Commission terms change without notice. Re-verify a row against the program's own page before relying on a number. Each row carries `commissionSourceUrl` and a verification date where one exists.
+
+The catalog was researched 2026-06-05 and re-verified 2026-09-28; `updatedAt` in the file records the last change.
+
+## The disclosure rule
+
+One affiliate disclosure per page that carries affiliate links, using the `disclosure` string in `data/programs.json`:
+
+> Some links on this page are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I actually use or have tested.
+
+Two further rules are non-negotiable in this repository: only link tools you actually use or have tested, and never let a link override the honest pick.
+
+## No hosted server
+
+There is no hosted MCP server and no remote endpoint. The skills are files: Markdown plus the scripts they call. `data/trinity-skill-registry.json` models MCP-callable actions and their arguments, but nothing in this repository serves them over a network. Running the scripts requires Node and a local clone.
+
+## Tests
+
+```bash
+npm test          # tsc --build, then node --test tests/*.test.mjs
+npm run type-check
+npm run build
+npm run audit     # scripts/affiliate-audit.mjs
+npm run join-queue
+```
+
+CI (`.github/workflows/ci.yml`, job `validate`) runs type-check, build and tests on every push and pull request. The tests cover the audit join logic and the join queue.
+
+## Links
+
+- Repository: https://github.com/frankxai/affiliate-agent-skills
+- Mirror: https://github.com/Agentic-Income/affiliate-agent-skills
+- Business plan: `BUSINESS.md`
+- Architecture and site shell: `ARCHITECTURE.md`
+- Audit notes: `AUDIT.md`
+- Affiliate ops agent design: `docs/AFFILIATE-OPS-AGENT.md`
+- Content backlog: `content-backlog.md`
+- Header and social assets: `assets/github/`
+
+## Licence
+
+MIT. See `LICENSE`.
