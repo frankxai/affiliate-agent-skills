@@ -52,6 +52,6 @@ Researched 2026-06-05. Each post is a comparison/commercial-intent piece in the 
 | F4 | Creator Trend Radar: What Your Audience Watched This Week | "track youtube trends automatically" | GenCreator workflow; Actor list + review gate | Backlog |
 | F5 | Publish Your Own Actor: Turning an Internal Tool Into Usage Revenue | "make money apify actor" | Developer-side guide; Apify Store monetization | Backlog; verify Store terms first |
 
-Rules for this cluster: no paid ads (Apify terms pay nothing on paid traffic); no commission figures in public copy until partners@apify.com confirms the cap; no Apify logo until the official kit is downloaded and its usage rules are read.
+Rules for this cluster: no paid ads (Apify terms pay nothing on paid traffic); commission terms verified 2026-11-12 against the terms page (20% then 30%, $2,500 Starter cap, 45-day cookie), but public copy still states no commission figures because they do not help the reader choose; no Apify logo until the official kit is downloaded and its usage rules are read.
 
 ## Source: research agent run 2026-06-05 (sources cited in session log)
